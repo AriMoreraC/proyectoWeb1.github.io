@@ -1,0 +1,44 @@
+#preguntas-contenedor{
+
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 2%;
+
+  justify-items: center;
+   
+}
+.pregunta{
+  gap: 2%;
+
+  padding: 2%;
+}
+
+@media (max-width : 720px) {
+    #preguntas-contenedor{
+        max-width: 95%;
+        grid-template-columns: 100% ;
+        justify-content: center;
+        text-align: center;
+         margin: 2.5%;
+    
+       
+    }
+}
+.card-header{
+    background-color: black;
+    color: #fff;
+}
+.card-body{
+
+    box-shadow: 10px 15px 20px #b4b4b4;
+    transform: translateY(-2%);
+    ul li{
+      text-align: start;
+    }
+}
+#subtitulo{
+    text-shadow: 5px 5px 10px #53fabd;
+    text-align: center;
+    margin: 0.5%;
+  } 
