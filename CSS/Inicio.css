@@ -5,6 +5,14 @@
   margin: 3%;
 }
 
+#populares {
+  margin: 4%;
+
+  justify-content: center;
+  img {
+    max-width: 100%;
+  }
+}
 .card {
   width: 100%;
   margin: 6%;
@@ -24,30 +32,9 @@
   padding: 1.5%;
 }
 
-#populares {
-  margin: 4%;
 
-  justify-content: center;
-  img {
-    max-width: 100%;
-  }
-}
 
 @media (max-width : 640px) {
-  .card-img-overlay {
-    text-align: end;
-    padding: 15%;
-  }
-  .card-img-overlay {
-    margin: 0%;
-  }
-  .card-text {
-    font-size: 1rem;
-
-  }
-  .col {
-    margin: 2%;
-  }
   #populares {
     margin: 5%;
    .card{
@@ -66,42 +53,6 @@
   }
 }
 
-@media (min-width : 680px) {
-  .Contenedor-Carrusel .card-img-overlay {
-    text-align: center;
-    font-size: 1.5rem;
-    justify-content: center;
-    padding: 10%;
-    h5 {
-      font-size: 2rem;
-    }
-  }
-  .card-img-overlay {
-    margin: 3%;
-  }
-}
-
-@media (max-width : 640px) {
-  .Contenedor-Carrusel .card-img-overlay {
-    text-align: center;
-    font-size: 0.7rem;
-    h5 {
-      font-size: 1rem;
-    }
-  }
-}
-
-@media (max-width : 420px) {
-  .Contenedor-Carrusel .card-img-overlay {
-    padding: 2%;
-    margin: 1%;
-    font-size: 0.5rem;
-    h5 {
-      font-size: 0.5rem;
-    }
-  }
-}
-
 .subtitulo {
   text-shadow: 5px 5px 10px #53fabd;
   text-align: center;
@@ -112,25 +63,47 @@
   filter: brightness(55%);
 }
 
-@media (max-width : 356px) {
-  .card-img-overlay {
-    text-align: end;
-  }
-  .card-img-overlay {
-    margin: 0;
-    h5 {
-      font-size: 0.7rem;
-    }
-  }
-  .card-text {
-    font-size: 0.5rem;
-  }
-
-}
-
 .Contenedor-grafico {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 60%;
 }
+.info-general{
+  max-width: 100%;
+  max-height: 90%;
+}
+@media (min-width: 1100px) {
+  .Contenedor-Carrusel  .info-general{
+  margin:3%;
+    font-size: 1.5rem; 
+    text-align: center;
+    h5{
+      font-size: 1r.5em;
+    }
+  
+  }
+  }
+
+@media (max-width: 480px) {
+.Contenedor-Carrusel  .info-general{
+margin:0%;
+  font-size: 0.8rem; 
+  text-align: center;
+  h5{
+    font-size: 1rem;
+  }
+
+}
+}
+@media (max-width: 420px) {
+  .Contenedor-Carrusel  .info-general{
+  margin: 2%;
+    font-size: 0.5rem;
+    text-align: center;
+    h5{
+      font-size: 0.6rem;
+    }
+  
+  }
+  }
