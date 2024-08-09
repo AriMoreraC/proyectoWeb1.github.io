@@ -1,7 +1,7 @@
 const productos = [
     {
         "id": 1,
-        "Nombre": "Producto 1",
+        "Nombre": "Retablos",
         "Descripcion": "Descripción del Producto 1",
         "Imagen": "https://i1.sndcdn.com/artworks-000427032654-6q5sf7-t500x500.jpg",
         "Precio": 1000,
