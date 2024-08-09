@@ -34,8 +34,8 @@ function detalle(id) {
   function displayCategories() {
     var select = $('#filter');
     var categories = [];
-    $.each(productos,function(index,book){
-      $.each(book.Categorias, function(index,category){
+    $.each(productos,function(index,prod){
+      $.each(prod.Categorias, function(index,category){
         if($.inArray(category, categories)===-1){
           categories.push(category)
           //Añadir opcion select
@@ -46,21 +46,22 @@ function detalle(id) {
   
   }
   $(document).ready(function () {
-    //Listar Libros
+    //Listar productos
     displayProd(productos)
     //Listar Categorias
     displayCategories()
     $('#filter').change(function () {
       var category=$(this).val()
-      var filteredBooks
+      var filterProd
       if(category==='all'){
-        filteredBooks=productos
+        filterProd=productos
       }else{
-        filteredBooks=productos.filter((function(producto){
-          return producto.categorias.includes(category)
+        filterProd=productos.filter((function(producto){
+          return producto.Categorias.includes(category)
         }))
       }
-      displayProd(filteredBooks)
+      displayProd(filterProd)
     });
   });
+  
   
