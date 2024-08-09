@@ -36,6 +36,69 @@
     </nav>
     <!-- Fin  Navegador -->
 
+    <main>
+      <div class="container-fluid p-3">
+        <!-- Imagen principal -->
+        <div class="row">
+          <div class="col-4">
+            <img id="Imagen" class="card-img-top detalle" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif"
+              alt="Imagen"/>
+          </div>
+          <!-- Card del producto -->
+          <div class="col-8">
+            <ul class="list-group detalle">
+              <li class="list-group-item nombreProducto">
+                <h2 id="Nombre" class="card-title">Nombre producto</h2>
+              </li>
+              <li class="list-group-item">
+                <p id="Descripcion" class="card-text">Descripción:</p>
+              </li>
+              <li class="list-group-item">
+                <p id="Precio" class="card-text">Precio:</p>
+              </li>
+              <li class="list-group-item">
+                <p id="TiempoEntrega" class="card-text">Tiempo de entrega:</p>
+              </li>
+              <li class="list-group-item">
+                <p id="CostoEnvio" class="card-text">Costo del envío:</p>
+              </li>
+              <li class="list-group-item">
+                <p id="Stock" class="card-text">Stock:</p>
+              </li>
+              <li class="list-group-item">
+                <p id="OpcionesEntrega" class="card-text">Opciones de entrega:</p>
+              </li>
+              <li class="list-group-item">
+                <p id="Garantia" class="card-text">Garantía:</p>
+              </li>
+              <li class="list-group-item">
+                <p id="Categorias" class="card-text">Categorías:</p>
+              </li>
+              <li class="list-group-item">
+                <button type="button" class="btn btn-dark btnCompra"><a href="">Añadir al carrito</a></button>
+                <button type="button" class="btn btn-dark btnCompra"><a href="./ProcesoCompra.html">Comprar</a></button>
+              </li>
+            </ul>
+          </div>
+          <!-- Galería de imágenes -->
+          <div class="row galeria">
+            <div class="col-4 colImagen">
+              <img id="Imagen1" class="card-img-top detalle imagenGaleria" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif" alt="Imagen1">
+            </div>
+            <div class="col-4 colImagen">
+              <img id="Imagen2" class="card-img-top detalle imagenGaleria" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif" alt="Imagen2">
+            </div>
+            <div class="col-4 colImagen">
+              <img id="Imagen3" class="card-img-top detalle imagenGaleria" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif" alt="Imagen3">
+            </div>
+          </div>
+          <div class="row link">
+            <h2><a href="./Contacto.html">Contacto y ayuda</a></h2>
+            <h2><a href="./Devolucion.html">Devoluciones</a></h2>
+          </div>
+        </div>
+      </div>
+  </main>
 
 
       <!-- Footer inicio -->
@@ -59,6 +122,10 @@
   </footer>
     <!-- Footer fin -->
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./Json/Productos.js"></script>
+    <script src="./Js/DetalleProductos.js"></script>
 </body>
 </html>
