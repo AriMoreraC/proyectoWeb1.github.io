@@ -2,9 +2,9 @@ const productos = [
     {
         "id": 1,
         "Nombre": "Retablo borde negro",
-        "Descripcion": "Descripción del Producto 1",
+        "Descripcion": "12x16 pulgadas",
         "Imagen": "https://i1.sndcdn.com/artworks-000427032654-6q5sf7-t500x500.jpg",
-        "Precio": 1000,
+        "Precio": 42700,
         "TiempoEntrega": "De una a dos semanas",
         "CostoEnvio": 1000,
         "Stock": "Disponible online y en tienda física",
@@ -20,9 +20,9 @@ const productos = [
     {
         "id": 2,
         "Nombre": "Retablo bastidor",
-        "Descripcion": "Descripción del Producto 2",
+        "Descripcion": "16x20 pulgadas",
         "Imagen": "https://goo.su/hXnf",
-        "Precio": 2000,
+        "Precio": 38700,
         "TiempoEntrega": "De una a dos semanas",
         "CostoEnvio": 2000,
         "Stock": "Disponible online y en tienda física",
@@ -55,16 +55,16 @@ const productos = [
     },
     {
         "id": 4,
-        "Nombre": "Producto 4",
-        "Descripcion": "",
+        "Nombre": "Impresiones 4x6",
+        "Descripcion": "4x6 pulgadas",
         "Imagen": "./Imagenes/NoEncontrado.avif",
         "Precio": 0,
-        "TiempoEntrega": "0 días",
+        "TiempoEntrega": "Inmediata",
         "CostoEnvio": 0,
         "Stock": "Disponible online y en tienda física",
         "OpcionesEntrega": "Envío postal y recogida en tienda",
-        "Garantia": "",
-        "Categorias": [""],
+        "Garantia": "No aplica garantía",
+        "Categorias": ["Impresiones"],
         "GaleriaImagenes": {
             "Imagen1": "./Imagenes/NoEncontrado.avif",
             "Imagen2": "./Imagenes/NoEncontrado.avif",
@@ -73,8 +73,8 @@ const productos = [
     },
     {
         "id": 5,
-        "Nombre": "Producto 5",
-        "Descripcion": "",
+        "Nombre": "Impresiones 6x8",
+        "Descripcion": "6x8 pulgadas",
         "Imagen": "./Imagenes/NoEncontrado.avif",
         "Precio": 0,
         "TiempoEntrega": "0 días",
@@ -82,7 +82,7 @@ const productos = [
         "Stock": "Disponible online y en tienda física",
         "OpcionesEntrega": "Envío postal y recogida en tienda",
         "Garantia": "",
-        "Categorias": [""],
+        "Categorias": ["Impresiones"],
         "GaleriaImagenes": {
             "Imagen1": "./Imagenes/NoEncontrado.avif",
             "Imagen2": "./Imagenes/NoEncontrado.avif",
@@ -100,7 +100,7 @@ const productos = [
         "Stock": "Disponible online y en tienda física",
         "OpcionesEntrega": "Envío postal y recogida en tienda",
         "Garantia": "",
-        "Categorias": [""],
+        "Categorias": ["Sesiones familiares"],
         "GaleriaImagenes": {
             "Imagen1": "./Imagenes/NoEncontrado.avif",
             "Imagen2": "./Imagenes/NoEncontrado.avif"
@@ -117,7 +117,7 @@ const productos = [
         "Stock": "Disponible online y en tienda física",
         "OpcionesEntrega": "Envío postal y recogida en tienda",
         "Garantia": "",
-        "Categorias": ["", ""],
+        "Categorias": ["Sesiones familiares"],
         "GaleriaImagenes": {
             "Imagen1": "./Imagenes/NoEncontrado.avif",
             "Imagen2": "./Imagenes/NoEncontrado.avif"
