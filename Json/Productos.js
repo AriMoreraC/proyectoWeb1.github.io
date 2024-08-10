@@ -37,14 +37,14 @@ const productos = [
     },
     {
         "id": 3,
-        "Nombre": "Producto 3",
+        "Nombre": "Retablo 15 mm",
         "Descripcion": "Descripción del Producto 3",
         "Imagen": "https://i.pinimg.com/736x/cd/d8/5c/cdd85c55640e26468133175ddb381829.jpg",
         "Precio": 3000,
         "TiempoEntrega": "De una a dos semanas",
         "CostoEnvio": 3000,
         "Stock": "Disponible online y en tienda física",
-        "OpcionesEntrega": "Envío postal y recogida en tienda",
+        "OpcionesEntrega": "Recogida en tienda",
         "Garantia": "30 años contra defectos de fábrica, no cubre golpes o rayas a partir de una incorresta manipulación",
         "Categorias": ["Retablos"],
         "GaleriaImagenes": {
@@ -64,7 +64,7 @@ const productos = [
         "Stock": "Disponible online y en tienda física",
         "OpcionesEntrega": "Envío postal y recogida en tienda",
         "Garantia": "",
-        "Categorias": ["", ""],
+        "Categorias": [""],
         "GaleriaImagenes": {
             "Imagen1": "./Imagenes/NoEncontrado.avif",
             "Imagen2": "./Imagenes/NoEncontrado.avif",
@@ -82,7 +82,7 @@ const productos = [
         "Stock": "Disponible online y en tienda física",
         "OpcionesEntrega": "Envío postal y recogida en tienda",
         "Garantia": "",
-        "Categorias": ["", ""],
+        "Categorias": [""],
         "GaleriaImagenes": {
             "Imagen1": "./Imagenes/NoEncontrado.avif",
             "Imagen2": "./Imagenes/NoEncontrado.avif",
@@ -100,7 +100,7 @@ const productos = [
         "Stock": "Disponible online y en tienda física",
         "OpcionesEntrega": "Envío postal y recogida en tienda",
         "Garantia": "",
-        "Categorias": ["", ""],
+        "Categorias": [""],
         "GaleriaImagenes": {
             "Imagen1": "./Imagenes/NoEncontrado.avif",
             "Imagen2": "./Imagenes/NoEncontrado.avif"
