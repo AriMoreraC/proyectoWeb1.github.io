@@ -1,16 +1,16 @@
 const productos = [
     {
         "id": 1,
-        "Nombre": "Retablos",
+        "Nombre": "Retablo borde negro",
         "Descripcion": "Descripción del Producto 1",
         "Imagen": "https://i1.sndcdn.com/artworks-000427032654-6q5sf7-t500x500.jpg",
         "Precio": 1000,
-        "TiempoEntrega": "Inmediata",
+        "TiempoEntrega": "De una a dos semanas",
         "CostoEnvio": 1000,
         "Stock": "Disponible online y en tienda física",
         "OpcionesEntrega": "Envío postal y recogida en tienda",
-        "Garantia": "3 meses",
-        "Categorias": ["a", "c"],
+        "Garantia": "30 años contra defectos de fábrica, no cubre golpes o rayas a partir de una incorresta manipulación",
+        "Categorias": ["Retablos"],
         "GaleriaImagenes": {
             "Imagen1": "https://i1.sndcdn.com/artworks-000427032654-6q5sf7-t500x500.jpg",
             "Imagen2": "https://i1.sndcdn.com/artworks-000427032654-6q5sf7-t500x500.jpg",
@@ -19,7 +19,7 @@ const productos = [
     },
     {
         "id": 2,
-        "Nombre": "Producto 2",
+        "Nombre": "Retablo bastidor",
         "Descripcion": "Descripción del Producto 2",
         "Imagen": "https://goo.su/hXnf",
         "Precio": 2000,
@@ -28,7 +28,7 @@ const productos = [
         "Stock": "Disponible online y en tienda física",
         "OpcionesEntrega": "Envío postal y recogida en tienda",
         "Garantia": "2 meses",
-        "Categorias": ["", ""],
+        "Categorias": ["Retablos"],
         "GaleriaImagenes": {
             "Imagen1": "https://goo.su/hXnf",
             "Imagen2": "https://goo.su/hXnf",
