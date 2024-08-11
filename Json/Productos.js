@@ -202,7 +202,7 @@ const productos = [
         "id": 12,
         "Nombre": "Fotografías de especies de animales comunes",
         "Descripcion": "Fotografías de especies de animales comunes. Para esto se solicita ir al establecimiento para tomar las fotos si es su mascota.",
-        "Imagen": "./Imagenes/_OQP2444.JPG",
+        "Imagen": "https://drive.google.com/file/d/1YIoyP6rnrGC-hqkkM2eWJu9mnRg7IY1I/view?usp=sharing",
         "Precio": 2600, 
         "TiempoEntrega": "Inmediata.",
         "CostoEnvio": 0,
