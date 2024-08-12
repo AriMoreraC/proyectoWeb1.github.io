@@ -145,7 +145,7 @@ const productos = [
         }
     },
     {
-        "id": 9, //Puede cambiarse porquees muy relativo según lo que desee el cliente
+        "id": 9, //Puede cambiarse porque es muy relativo según lo que desee el cliente
         "Nombre": "Fotografías comerciales",
         "Descripcion": "Fotografías comerciales, puede cambiarse el precio porque es muy relativo según lo que desee el cliente.",
         "Imagen": "Imagenes/_MG_8542.JPG",
