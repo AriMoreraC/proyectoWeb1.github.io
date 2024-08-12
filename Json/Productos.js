@@ -94,7 +94,7 @@ const productos = [
         "id": 6,
         "Nombre": "Sesión familiar de 8 fotos",
         "Descripcion": "Sesión fotográfica, ya sea familiar o individual; la cual cuenta de 8 fotos diferentes. Para esto se solicita ir al establecimiento para tomar las fotos.",
-        "Imagen": "Imagenes/_OQP6478.JPG",
+        "Imagen": "./Imagenes/_OQP6478.JPG",
         "Precio": 17000,
         "TiempoEntrega": "Inmediata",
         "CostoEnvio": 100,
@@ -103,16 +103,16 @@ const productos = [
         "Garantia": "No aplica garantía, pero tienen respaldo en el archivo de la empresa.",
         "Categorias": ["Sesiones familiares"],
         "GaleriaImagenes": {
-            "Imagen1": "Imagenes/_OQP6522.JPG",
-            "Imagen2": "Imagenes/_OQP5183.JPG",
-            "Imagen3": "Imagenes/_OQP2790.JPG"
+            "Imagen1": "./Imagenes/_OQP6522.JPG",
+            "Imagen2": "./Imagenes/_OQP5183.JPG",
+            "Imagen3": "./Imagenes/_OQP2790.JPG"
         }
     },
     {
         "id": 7,
         "Nombre": "Sesión familiar de 10 fotos",
         "Descripcion": "Sesión fotográfica, ya sea familiar o individual; la cual cuenta de 10 fotos diferentes. Para esto se solicita ir al establecimiento para tomar las fotos.",
-        "Imagen": "Imagenes/_OQP3014.JPG",
+        "Imagen": "./Imagenes/_OQP3014.JPG",
         "Precio": 23000,
         "TiempoEntrega": "Inmediata",
         "CostoEnvio":120,
@@ -121,16 +121,16 @@ const productos = [
         "Garantia": "No aplica garantía, pero tienen respaldo en el archivo de la empresa.",
         "Categorias": ["Sesiones familiares"],
         "GaleriaImagenes": {
-            "Imagen1": "Imagenes/_OQP5183.JPG",
-            "Imagen2": "Imagenes/_OQP2790.JPG",
-            "Imagen3": "Imagenes/_OQP3014.JPG"
+            "Imagen1": "./Imagenes/_OQP5183.JPG",
+            "Imagen2": "./Imagenes/_OQP2790.JPG",
+            "Imagen3": "./Imagenes/_OQP3014.JPG"
         }
     },
     {
         "id": 8,
         "Nombre": "Sesión familiar en exteriores, de 30 o más fotos",
         "Descripcion": "Sesión fotográfica en exteriores, ya sea familiar o individual; la cual cuenta de 30 o más fotos diferentes. Sesión fotográfica que cuenta con el precio mas elevado debido al traslado del fotografo y su equipo.",
-        "Imagen": "Imagenes/_OQP4121.JPG",
+        "Imagen": "./Imagenes/_OQP4121.JPG",
         "Precio": 50000,
         "TiempoEntrega": "Inmediata",
         "CostoEnvio": 0,
@@ -139,16 +139,16 @@ const productos = [
         "Garantia": "No aplica garantía, pero tienen respaldo en el archivo de la empresa.",
         "Categorias": ["Sesiones familiares"],
         "GaleriaImagenes": {
-            "Imagen1": "Imagenes/_OQP4121.JPG",
-            "Imagen2": "Imagenes/_OQP4065.JPG",
-            "Imagen3": "Imagenes/_OQP2790.JPG"
+            "Imagen1": "./Imagenes/_OQP4121.JPG",
+            "Imagen2": "./Imagenes/_OQP4065.JPG",
+            "Imagen3": "./Imagenes/_OQP2790.JPG"
         }
     },
     {
         "id": 9, //Puede cambiarse porque es muy relativo según lo que desee el cliente
         "Nombre": "Fotografías comerciales",
         "Descripcion": "Fotografías comerciales, puede cambiarse el precio porque es muy relativo según lo que desee el cliente.",
-        "Imagen": "Imagenes/_MG_8542.JPG",
+        "Imagen": "./Imagenes/_MG_8542.JPG",
         "Precio": 2500,
         "TiempoEntrega": "Depende de las necesidades del cliente y el tipo de producto o servicio.",
         "CostoEnvio": 0,
@@ -157,16 +157,16 @@ const productos = [
         "Garantia": "No aplica garantía.",
         "Categorias": ["Fotografías comerciales"],
         "GaleriaImagenes": {
-            "Imagen1": "/Imagenes/_MG_8542.JPG",
-            "Imagen2": "/Imagenes/_MG_8689.JPG",
-            "Imagen3": "/Imagenes/_MG_8739.JPG"
+            "Imagen1": "./Imagenes/_MG_8542.JPG",
+            "Imagen2": "./Imagenes/_MG_8689.JPG",
+            "Imagen3": "./Imagenes/_MG_8739.JPG"
         }
     },
     {
         "id": 10,
         "Nombre": "Fotografías de paisajes naturales o urbanos",
         "Descripcion": "Fotografías de paisajes naturales o urbanos, contamos ya con diferentes paisajes capturados en fotos las cuales puede elegir la que guste o puede solicitarlos.",
-        "Imagen": "Imagenes/_OQP2399.JPG",
+        "Imagen": "./Imagenes/_OQP2399.JPG",
         "Precio": 1040, 
         "TiempoEntrega": "Inmediata.",
         "CostoEnvio": 0,
@@ -175,9 +175,9 @@ const productos = [
         "Garantia": "No aplica garantía.",
         "Categorias": ["Fotografías para la venta"],
         "GaleriaImagenes": {
-            "Imagen1": "Imagenes/_OQP1055.JPG",
-            "Imagen2": "Imagenes/_OQP8357.JPG",
-            "Imagen3": "Imagenes/_OQP8363.JPG"
+            "Imagen1": "./Imagenes/_OQP1055.JPG",
+            "Imagen2": "./Imagenes/_OQP8357.JPG",
+            "Imagen3": "./Imagenes/_OQP8363.JPG"
 
         }
     },
@@ -185,7 +185,7 @@ const productos = [
         "id": 11,
         "Nombre": "Fotografías de objetos cotidianos",
         "Descripcion": "Fotografía del objeto que desee, esta se debe ir al establecimiento para tomar las fotos y traer el objeto que desee.",
-        "Imagen": "Imagenes/_.JPG",
+        "Imagen": "./Imagenes/NoEncontrado.avif",
         "Precio": 2080, 
         "TiempoEntrega": "Inmediata.",
         "CostoEnvio": 0,
@@ -202,7 +202,7 @@ const productos = [
         "id": 12,
         "Nombre": "Fotografías de especies de animales comunes",
         "Descripcion": "Fotografías de especies de animales comunes. Para esto se solicita ir al establecimiento para tomar las fotos si es su mascota.",
-        "Imagen": "https://drive.google.com/file/d/1YIoyP6rnrGC-hqkkM2eWJu9mnRg7IY1I/view?usp=sharing",
+        "Imagen": "./Imagenes/_OQP2444.JPG",
         "Precio": 2600, 
         "TiempoEntrega": "Inmediata.",
         "CostoEnvio": 0,
@@ -211,9 +211,9 @@ const productos = [
         "Garantia": "7 dias",
         "Categorias": ["Fotografías para la venta"],
         "GaleriaImagenes": {
-            "Imagen1": "Imagenes/_OQP2168.JPG",
-            "Imagen2": "Imagenes/_OQP2251.JPG",
-            "Imagen3": "Imagenes/_OQP2451.JPG"
+            "Imagen1": "./Imagenes/_OQP2168.JPG",
+            "Imagen2": "./Imagenes/_OQP2251.JPG",
+            "Imagen3": "./Imagenes/_OQP2451.JPG"
         }
     }
 ];
