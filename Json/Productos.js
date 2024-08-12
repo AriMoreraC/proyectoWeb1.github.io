@@ -148,7 +148,7 @@ const productos = [
         "id": 9, //Puede cambiarse porque es muy relativo según lo que desee el cliente
         "Nombre": "Fotografías comerciales",
         "Descripcion": "Fotografías comerciales, puede cambiarse el precio porque es muy relativo según lo que desee el cliente.",
-        "Imagen": "./Imagenes/MG8542.JPG",
+        "Imagen": "./Imagenes/MG8542.jpg",
         "Precio": 2500,
         "TiempoEntrega": "Depende de las necesidades del cliente y el tipo de producto o servicio.",
         "CostoEnvio": 0,
