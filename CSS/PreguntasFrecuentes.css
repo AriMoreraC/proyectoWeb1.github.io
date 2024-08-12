@@ -8,11 +8,13 @@
   justify-items: center;
    
 }
-.pregunta{
-  gap: 2%;
-
-  padding: 2%;
-}
+.card-pregunta{
+  transition: opacity 0.6s ease;
+   }
+   #preguntas-contenedor:hover > :not(:hover){
+    
+  opacity: 0.4;
+   }
 
 @media (max-width : 720px) {
     #preguntas-contenedor{
