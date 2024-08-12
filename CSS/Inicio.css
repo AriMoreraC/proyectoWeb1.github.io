@@ -74,41 +74,7 @@ opacity: 0.4;
   align-items: center;
   max-width: 60%;
 }
-.info-general{
-  max-width: 100%;
-  max-height: 90%;
-}
-@media (min-width: 1100px) {
-  .Contenedor-Carrusel  .info-general{
-  margin:3%;
-    font-size: 1.5rem; 
-    text-align: center;
-    h5{
-      font-size: 1.5em;
-    }
-  
-  }
-  }
 
-@media (max-width: 480px) {
-.Contenedor-Carrusel  .info-general{
-margin:0%;
-  font-size: 0.8rem; 
-  text-align: center;
-  h5{
-    font-size: 1rem;
-  }
-
-}
-}
-@media (max-width: 420px) {
-  .Contenedor-Carrusel  .info-general{
-  margin: 2%;
-    font-size: 0.5rem;
-    text-align: center;
-    h5{
-      font-size: 0.6rem;
+    #grafico {
+      max-width: 100%;
     }
-  
-  }
-  }
