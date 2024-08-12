@@ -32,7 +32,12 @@
   padding: 1.5%;
 }
 
-
+ .card{
+transition: opacity 0.6s ease;
+ }
+ .card-group:hover > :not(:hover){
+opacity: 0.4;
+ }
 
 @media (max-width : 640px) {
   #populares {
