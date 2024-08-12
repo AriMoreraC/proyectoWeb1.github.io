@@ -81,7 +81,7 @@ const productos = [
         "CostoEnvio": 3000,
         "Stock": "Disponible online y en tienda física.",
         "OpcionesEntrega": "Recogida en tienda.",
-        "Garantia": "No aplica Garsantía",
+        "Garantia": "No aplica Garantía",
         "Categorias": ["Impresiones"],
         "GaleriaImagenes": {
             "Imagen1": "https://i.pinimg.com/736x/cd/d8/5c/cdd85c55640e26468133175ddb381829.jpg",
@@ -191,7 +191,7 @@ const productos = [
         "CostoEnvio": 0,
         "Stock": "Disponible online y en tienda física",
         "OpcionesEntrega": "Envío postal y recogida en tienda",
-        "Garantia": "15 dias",
+        "Garantia": "15 días",
         "Categorias": ["Fotografías para la venta"],
         "GaleriaImagenes": {            
             "Imagen1": "./Imagenes/NoEncontrado.avif",
@@ -208,7 +208,7 @@ const productos = [
         "CostoEnvio": 0,
         "Stock": "Disponible online y en tienda física",
         "OpcionesEntrega": "Envío postal y recogida en tienda",
-        "Garantia": "7 dias",
+        "Garantia": "7 días",
         "Categorias": ["Fotografías para la venta"],
         "GaleriaImagenes": {
             "Imagen1": "./Imagenes/_OQP2168.JPG",
