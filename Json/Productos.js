@@ -122,7 +122,7 @@ const productos = [
         "Categorias": ["Sesiones familiares"],
         "GaleriaImagenes": {
             "Imagen1": "./Imagenes/OQP5183.JPG",
-            "Imagen2": "./Imagenes/OQP2790.JPG",
+            "Imagen2": "./Imagenes/OQP2790.jpg",
             "Imagen3": "./Imagenes/OQP3014.JPG"
         }
     },
@@ -141,7 +141,7 @@ const productos = [
         "GaleriaImagenes": {
             "Imagen1": "./Imagenes/OQP4121.JPG",
             "Imagen2": "./Imagenes/OQP4065.JPG",
-            "Imagen3": "./Imagenes/OQP2790.JPG"
+            "Imagen3": "./Imagenes/OQP2790.jpg"
         }
     },
     {
