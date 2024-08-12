@@ -24,7 +24,7 @@ const productos = [
         "Imagen": "https://goo.su/hXnf",
         "Precio": 38700,
         "TiempoEntrega": "De una a dos semanas.",
-        "CostoEnvio": 2000,
+        "CostoEnvio": 0,
         "Stock": "Disponible online y en tienda física.",
         "OpcionesEntrega": "Recogida en tienda.",
         "Garantia": "30 años contra defectos de fábrica, no cubre golpes o rayas a partir de una incorrecta manipulación.",
