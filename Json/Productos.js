@@ -2,7 +2,7 @@ const productos = [
     {
         "id": 1,
         "Nombre": "Retablo borde negro",
-        "Descripcion": "Retablo de 12x16 pulgadas, con borde negro de 1 cm buena calidad.",
+        "Descripcion": "Retablo de 12x16 pulgadas, con borde negro de 1 cm de buena calidad.",
         "Imagen": "https://i1.sndcdn.com/artworks-000427032654-6q5sf7-t500x500.jpg",
         "Precio": 42700,
         "TiempoEntrega": "De una a dos semanas.",
@@ -129,7 +129,7 @@ const productos = [
     {
         "id": 8,
         "Nombre": "Sesión familiar en exteriores, de 30 o más fotos",
-        "Descripcion": "Sesión fotográfica en exteriores, ya sea familiar o individual; la cual cuenta de 30 o más fotos diferentes. Sesión fotográfica que cuenta con el precio mas elevado debido al traslado del fotografo y su equipo.",
+        "Descripcion": "Sesión fotográfica en exteriores, ya sea familiar o individual; la cual cuenta de 30 o más fotos diferentes. Sesión fotográfica que cuenta con el precio más elevado debido al traslado del fotografo y su equipo.",
         "Imagen": "./Imagenes/OQP4121.JPG",
         "Precio": 50000,
         "TiempoEntrega": "Inmediata",
