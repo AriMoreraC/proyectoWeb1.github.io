@@ -6,7 +6,7 @@ const productos = [
         "Imagen": "https://i1.sndcdn.com/artworks-000427032654-6q5sf7-t500x500.jpg",
         "Precio": 42700,
         "TiempoEntrega": "De una a dos semanas.",
-        "CostoEnvio": 1000,
+        "CostoEnvio": 0,
         "Stock": "Disponible online y en tienda física.",
         "OpcionesEntrega": "Recogida en tienda.",
         "Garantia": "30 años contra defectos de fábrica, no cubre golpes o rayas a partir de una incorrecta manipulación.",
