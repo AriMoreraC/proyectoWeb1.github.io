@@ -157,9 +157,9 @@ const productos = [
         "Garantia": "No aplica garantía.",
         "Categorias": ["Fotografías comerciales"],
         "GaleriaImagenes": {
-            "Imagen1": "./Imagenes/MG8542.JPG",
-            "Imagen2": "./Imagenes/MG8689.JPG",
-            "Imagen3": "./Imagenes/MG8739.JPG"
+            "Imagen1": "./Imagenes/MG8542.jpg",
+            "Imagen2": "./Imagenes/MG8689.jpg",
+            "Imagen3": "./Imagenes/MG8739.jpg"
         }
     },
     {
