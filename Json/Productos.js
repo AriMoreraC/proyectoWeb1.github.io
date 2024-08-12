@@ -202,7 +202,7 @@ const productos = [
         "id": 12,
         "Nombre": "Fotografías de especies de animales comunes",
         "Descripcion": "Fotografías de especies de animales comunes. Para esto se solicita ir al establecimiento para tomar las fotos si es su mascota.",
-        "Imagen": "./Imagenes/_OQP2444.JPG",
+        "Imagen": "./Imagenes/OQP2444.JPG",
         "Precio": 2600, 
         "TiempoEntrega": "Inmediata.",
         "CostoEnvio": 0,
@@ -211,9 +211,9 @@ const productos = [
         "Garantia": "7 dias",
         "Categorias": ["Fotografías para la venta"],
         "GaleriaImagenes": {
-            "Imagen1": "./Imagenes/_OQP2168.JPG",
-            "Imagen2": "./Imagenes/_OQP2251.JPG",
-            "Imagen3": "./Imagenes/_OQP2451.JPG"
+            "Imagen1": "./Imagenes/OQP2168.JPG",
+            "Imagen2": "./Imagenes/OQP2251.JPG",
+            "Imagen3": "./Imagenes/OQP2451.JPG"
         }
     }
 ];
