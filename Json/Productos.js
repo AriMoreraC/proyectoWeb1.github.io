@@ -148,7 +148,7 @@ const productos = [
         "id": 9, //Puede cambiarse porque es muy relativo según lo que desee el cliente
         "Nombre": "Fotografías comerciales",
         "Descripcion": "Fotografías comerciales, puede cambiarse el precio porque es muy relativo según lo que desee el cliente.",
-        "Imagen": "./Imagenes/MG_8542.JPG",
+        "Imagen": "./Imagenes/MG8542.JPG",
         "Precio": 2500,
         "TiempoEntrega": "Depende de las necesidades del cliente y el tipo de producto o servicio.",
         "CostoEnvio": 0,
@@ -157,9 +157,9 @@ const productos = [
         "Garantia": "No aplica garantía.",
         "Categorias": ["Fotografías comerciales"],
         "GaleriaImagenes": {
-            "Imagen1": "./Imagenes/MG_8542.JPG",
-            "Imagen2": "./Imagenes/MG_8689.JPG",
-            "Imagen3": "./Imagenes/MG_8739.JPG"
+            "Imagen1": "./Imagenes/MG8542.JPG",
+            "Imagen2": "./Imagenes/MG8689.JPG",
+            "Imagen3": "./Imagenes/MG8739.JPG"
         }
     },
     {
