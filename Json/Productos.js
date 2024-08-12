@@ -94,7 +94,7 @@ const productos = [
         "id": 6,
         "Nombre": "Sesión familiar de 8 fotos",
         "Descripcion": "Sesión fotográfica, ya sea familiar o individual; la cual cuenta de 8 fotos diferentes. Para esto se solicita ir al establecimiento para tomar las fotos.",
-        "Imagen": "./Imagenes/OQP6478.JPG",
+        "Imagen": "./Imagenes/OQP6478.jpg",
         "Precio": 17000,
         "TiempoEntrega": "Inmediata",
         "CostoEnvio": 100,
@@ -103,9 +103,9 @@ const productos = [
         "Garantia": "No aplica garantía, pero tienen respaldo en el archivo de la empresa.",
         "Categorias": ["Sesiones familiares"],
         "GaleriaImagenes": {
-            "Imagen1": "./Imagenes/OQP6522.JPG",
+            "Imagen1": "./Imagenes/OQP6522.jpg",
             "Imagen2": "./Imagenes/OQP5183.JPG",
-            "Imagen3": "./Imagenes/OQP2790.JPG"
+            "Imagen3": "./Imagenes/OQP2790.jpg"
         }
     },
     {
