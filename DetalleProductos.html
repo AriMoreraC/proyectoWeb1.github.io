@@ -104,8 +104,7 @@
           <div class="comment-box">
               <textarea id="userComment" rows="4" cols="50" placeholder="Deja un comentario (opcional)"></textarea>
               <br>
-              <button id="saveRating" disabled>Guardar Calificación y Comentario</button>
-              <button id="cancelRating" disabled>Cancelar</button>
+              <button id="saveRating" disabled onclick="location.reload();">Guardar Calificación y Comentario</button>
               <p id="feedback" class="feedback"></p>
           </div>
       
@@ -157,17 +156,11 @@
       const saveButton = document.getElementById('saveRating');
       let selectedRating = 0;
 
+      // Llamada a setRating(0) para que las estrellas no estén seleccionadas al cargar la página
+      setRating(0);
+
       // Mostrar calificaciones y comentarios guardados
       displaySavedRatings();
-
-      resetStars();
-
-      // Si hay una calificación guardada recientemente, la mostramos
-      if (savedRatings.length > 0) {
-          const lastRating = savedRatings[savedRatings.length - 1];
-          selectedRating = lastRating.rating; // Asegúrate de que selectedRating esté actualizado
-          setRating(selectedRating);
-      }
 
       // Asignamos el evento de clic a cada estrella
       stars.forEach(star => {
@@ -175,8 +168,7 @@
               selectedRating = this.getAttribute('data-value');
               setRating(selectedRating);
               saveButton.disabled = false; // Habilitar el botón cuando se selecciona una calificación
-              cancel
-            });
+          });
 
           star.addEventListener('mouseover', function() {
               const rating = this.getAttribute('data-value');
@@ -194,10 +186,9 @@
           savedRatings.push({ rating: selectedRating, comment: comment });
           localStorage.setItem('userRatings', JSON.stringify(savedRatings));
           displaySavedRatings();
+
           document.getElementById('userComment').value = ''; // Limpiar el comentario después de guardar
           saveButton.disabled = true; // Deshabilitar el botón después de guardar
-          // Restaurar el color de las estrellas a gris
-          resetStars();
       });
 
       // Función para mostrar las estrellas seleccionadas
@@ -222,15 +213,6 @@
           });
       }
 
-      // Función para restaurar las estrellas a su color original
-      function resetStars() {
-          stars.forEach(star => {
-              star.classList.remove('selected');
-              star.classList.remove('hover');
-              
-          });
-      }
-
       // Función para mostrar calificaciones y comentarios guardados
       function displaySavedRatings() {
           const savedRatingsDiv = document.getElementById('savedRatings');
@@ -249,8 +231,6 @@
           localStorage.removeItem('userRatings');
           savedRatings.length = 0; // Limpiar el array en memoria
           displaySavedRatings();
-          // feedback.textContent = 'Todas las calificaciones han sido eliminadas.';
-          
       });
   </script>
 
