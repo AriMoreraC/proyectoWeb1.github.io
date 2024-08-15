@@ -3,7 +3,7 @@ const productos = [
         "id": 1,
         "Nombre": "Retablo borde negro",
         "Descripcion": "Retablo de 12x16 pulgadas, con borde negro de 1 cm de buena calidad.",
-        "Imagen": "https://i1.sndcdn.com/artworks-000427032654-6q5sf7-t500x500.jpg",
+        "Imagen": "",
         "Precio": 42700,
         "TiempoEntrega": "De una a dos semanas.",
         "CostoEnvio": 0,
@@ -12,16 +12,16 @@ const productos = [
         "Garantia": "30 años contra defectos de fábrica, no cubre golpes o rayas a partir de una incorrecta manipulación.",
         "Categorias": ["Retablos"],
         "GaleriaImagenes": {
-            "Imagen1": "https://i1.sndcdn.com/artworks-000427032654-6q5sf7-t500x500.jpg",
-            "Imagen2": "https://i1.sndcdn.com/artworks-000427032654-6q5sf7-t500x500.jpg",
-            "Imagen3": "https://i1.sndcdn.com/artworks-000427032654-6q5sf7-t500x500.jpg"
+            "Imagen1": "",
+            "Imagen2": "",
+            "Imagen3": ""
         }
     },
     {
         "id": 2,
         "Nombre": "Retablo bastidor",
         "Descripcion": "Retablo de 16x20 pulgadas, de borde tipo bastidor (borde a los lados de 1.5 cm color negro).",
-        "Imagen": "https://goo.su/hXnf",
+        "Imagen": "",
         "Precio": 38700,
         "TiempoEntrega": "De una a dos semanas.",
         "CostoEnvio": 0,
@@ -30,9 +30,9 @@ const productos = [
         "Garantia": "30 años contra defectos de fábrica, no cubre golpes o rayas a partir de una incorrecta manipulación.",
         "Categorias": ["Retablos"],
         "GaleriaImagenes": {
-            "Imagen1": "https://goo.su/hXnf",
-            "Imagen2": "https://goo.su/hXnf",
-            "Imagen3": "https://goo.su/hXnf"
+            "Imagen1": "",
+            "Imagen2": "",
+            "Imagen3": ""
         }
     },
      {
@@ -75,7 +75,7 @@ const productos = [
         "id": 5,
         "Nombre": "Impresiones 8x10",
         "Descripcion": "Impresiones del 8x10 en papel fotográfico, este es el tamaño de impresión más grande que trabajamos. Para esto se solicita ir al establecimiento para tomar las fotos o enviar vía correo la fotografia que desee con el número de pedido y sus datos.",
-        "Imagen": "https://i.pinimg.com/736x/cd/d8/5c/cdd85c55640e26468133175ddb381829.jpg",
+        "Imagen": "",
         "Precio": 3150,
         "TiempoEntrega": "Inmediata.",
         "CostoEnvio": 0,
@@ -84,9 +84,9 @@ const productos = [
         "Garantia": "No aplica Garantía",
         "Categorias": ["Impresiones"],
         "GaleriaImagenes": {
-            "Imagen1": "https://i.pinimg.com/736x/cd/d8/5c/cdd85c55640e26468133175ddb381829.jpg",
-            "Imagen2": "https://i.pinimg.com/736x/cd/d8/5c/cdd85c55640e26468133175ddb381829.jpg",
-            "Imagen3": "https://i.pinimg.com/736x/cd/d8/5c/cdd85c55640e26468133175ddb381829.jpg"
+            "Imagen1": "",
+            "Imagen2": "",
+            "Imagen3": ""
         }
     },
 
@@ -195,7 +195,8 @@ const productos = [
         "Categorias": ["Fotografías para la venta"],
         "GaleriaImagenes": {            
             "Imagen1": "./Imagenes/NoEncontrado.avif",
-            "Imagen2": "./Imagenes/NoEncontrado.avif"
+            "Imagen2": "./Imagenes/NoEncontrado.avif",
+            "Imagen3": "./Imagenes/NoEncontrado.avif"
         }
     },
     {
