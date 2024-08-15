@@ -6,7 +6,6 @@
 }
 
 #populares {
-  margin: 4%;
 
   justify-content: center;
   img {
@@ -26,10 +25,6 @@
 .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
   transform: translateY(-2%);
-}
-
-.card .info {
-  padding: 1.5%;
 }
 
  .card{
@@ -61,7 +56,7 @@ opacity: 0.4;
 .subtitulo {
   text-shadow: 5px 5px 10px #53fabd;
   text-align: center;
-  margin: 0%;
+  margin: 1%;
 }
 
 .card-img {
