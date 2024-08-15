@@ -42,3 +42,23 @@
   .link a:hover {
     background-color: #B4B4B4;
   }
+
+/* Reseñas */
+.star {
+  font-size: 2rem;
+  cursor: pointer;
+  color: gray; /* Color gris por defecto */
+}
+.star.selected {
+  color: gold; /* Color dorado cuando está seleccionada */
+}
+.star.hover {
+  color: gold; /* Color dorado cuando el ratón está sobre la estrella */
+}
+.comment-box {
+  margin-top: 10px;
+}
+.feedback {
+  color: green;
+  font-weight: bold;
+}
