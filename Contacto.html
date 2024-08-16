@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/Principal.css">
+    <link rel="stylesheet" href="./CSS/Contacto.css">
     <title>Inicio</title>
 </head>
 <body>
@@ -35,9 +36,102 @@
       </div>
     </nav>
     <!-- Fin  Navegador -->
- 
-    
-      <!-- Footer inicio -->
+    <main>
+      <h1 class="subtitulo">Información de contacto</h1>
+        <div class="grid">
+            <div class="gridTitulo">
+                Teléfonos
+            </div>
+            <div class="gridItem">
+                <img src="./ImagenesContacto/Icono llamada.png" alt="Icono llamada">
+                <p>
+                    <b>+506</b> 87406952
+                    <br><br>
+                    <b>+506</b> 87355769
+                </p>
+            </div>
+            <div class="gridTitulo">
+                Dirección
+            </div>
+            <div class="gridItem">
+                <img src="./ImagenesContacto/Logo de ubicación.png" alt="Logo de ubicación">
+                <p>
+                    200 metros al Sur de la Calle Salas-Cambronero, Guácima Arriba de Alajuela.
+                </p>
+            </div>
+            <div class="gridTitulo">
+                Horarios
+            </div>
+            <div class="gridItem">
+                <img src="./ImagenesContacto/Icono de horario.png" alt="Horarios">
+                <p>
+                    De Lunes a Viernes de 8:00 am a 4:00 pm.
+                </p>
+            </div>
+        </div>
+        <h1 class="tituloSecundario">Formulario de contacto</h1>
+        <form class="form" method="post" name="formulario" id="formulario">
+            <div class="datos">
+                <label for="Nombre">Nombre y apellido</label>
+                <input type="text" id="Nombre" name="Nombre" 
+                title="El nombre es obligatorio" required>
+                <label for="Correo">Correo electrónico</label>
+                <input type="email" id="Correo" name="Correo" 
+                placeholder="correo@gmail.com" title="Correo no válido" required>
+                <br>
+                <label for="Telefono">Teléfono</label>
+                <input type="tel" id="Telefono" name="Telefono" 
+                placeholder="+506 12345678" pattern="[0-9+ ]{13}" 
+                title="Teléfono no válido" required>            
+                <label for="listaProvincias">Provincia</label>
+                <select name="listaProvincias" id="listaProvincias" 
+                title="Seleccione una Provincia" required>
+                    <option value="" disabled selected hidden>Seleccione</option>
+                    <option value="Alajuela">Alajuela</option>
+                    <option value="San José">San José</option>
+                    <option value="Heredia">Heredia</option>
+                    <option value="Cartago">Cartago</option>
+                    <option value="Limón">Limón</option>
+                    <option value="Puntarenas">Puntarenas</option>
+                    <option value="Guanacaste">Guanacaste</option>
+                </select>
+            </div>            
+            <br>
+            <div class="servicios">
+                <label for="listaServicios">Servicio</label>
+                <select name="listaServicios" id="listaServicios" 
+                title="Seleccione un servicio" required>
+                    <option value="" disabled selected hidden>Seleccione</option>
+                    <option value="Construcción">Construcción</option>
+                    <option value="Fontanería">Fontanería</option>
+                    <option value="Pintura">Pintura</option>
+                    <option value="Electricidad">Electricidad</option>
+                    <option value="Herrería">Herrería</option>
+                    <option value="Carpintería">Carpintería</option>
+                    <option value="Trampas de grasa">Trampas de grasa</option>
+                </select>
+                <fieldset>
+                    <legend>Tipo de servicio</legend>
+                    <input type="radio" id="Mantenimiento" name="TipoServicio" required>
+                    <label for="Mantenimiento">Mantenimiento</label>
+                    <input type="radio" id="Urgente" name="TipoServicio" required>
+                    <label for="Urgente">Urgente</label>
+                </fieldset>
+            </div>
+            <br>
+            <div class="mensaje">
+                <label for="Asunto">Asunto</label>
+                <input type="text" name="Asunto" id="Asunto" required>
+                <br>
+                <label for="Mensaje">Mensaje</label>
+                <br>
+                <textarea name="Mensaje" id="Mensaje" required></textarea>
+                <input type="reset" value="Cancelar" id="btnCancelar">
+                <input type="submit" value="Enviar" id="btnEnviar">
+            </div>
+        </form>
+    </main>
+    <!-- Footer inicio -->
   <footer>      
     <div class="container-fluid">
 <h4>Contáctenos</h4>

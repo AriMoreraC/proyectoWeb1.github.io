@@ -33,8 +33,8 @@ const stars = document.querySelectorAll('.star');
           localStorage.setItem(`userRatings_${productId}`, JSON.stringify(savedRatings)); // Guardar usando el ID del producto
           displaySavedRatings();
   
-          document.getElementById('userComment').value = ''; // Limpiar el comentario después de guardar
-          saveButton.disabled = true; // Deshabilitar el botón después de guardar
+          document.getElementById('userComment').value = '';
+          saveButton.disabled = true;
       });
   
       // Función para mostrar las estrellas seleccionadas
@@ -73,18 +73,9 @@ const stars = document.querySelectorAll('.star');
               const ratingDiv = document.createElement('div');
               const starsDisplay = '★'.repeat(entry.rating) + '☆'.repeat(5 - entry.rating);
               const comment = entry.comment ? `${entry.comment}` : '';
-            //   const comment = entry.comment ? `Comentario: ${entry.comment}` : 'Sin comentario';
               ratingDiv.innerHTML = `<div class="resena">
               <span class="calificacion">Calificación ${index + 1}</span>: <span class="estrellas">${starsDisplay}</span>
                 <span class="form-control comentario">${comment}</span></div>`;
-            //   ratingDiv.textContent = `Calificación ${index + 1}: ${starsDisplay} - ${comment}`;
               savedRatingsDiv.appendChild(ratingDiv);
           });
       }
-  
-      // Limpiar todas las calificaciones y comentarios
-    //   document.getElementById('clearRatings').addEventListener('click', function() {
-    //       localStorage.removeItem(`userRatings_${productId}`); // Limpiar solo las calificaciones del producto actual
-    //       savedRatings.length = 0; // Limpiar el array en memoria
-    //       displaySavedRatings();
-    //   });
