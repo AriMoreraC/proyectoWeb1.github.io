@@ -5,10 +5,7 @@ const stars = document.querySelectorAll('.star');
       const saveButton = document.getElementById('saveRating');
       let selectedRating = 0;
   
-      // Llamada a setRating(0) para que las estrellas no estén seleccionadas al cargar la página
       setRating(0);
-  
-      // Mostrar calificaciones y comentarios guardados
       displaySavedRatings();
   
       // Asignamos el evento de clic a cada estrella
@@ -16,7 +13,7 @@ const stars = document.querySelectorAll('.star');
           star.addEventListener('click', function() {
               selectedRating = this.getAttribute('data-value');
               setRating(selectedRating);
-              saveButton.disabled = false; // Habilitar el botón cuando se selecciona una calificación
+              saveButton.disabled = false;
           });
   
           star.addEventListener('mouseover', function() {
@@ -66,18 +63,28 @@ const stars = document.querySelectorAll('.star');
       function displaySavedRatings() {
           const savedRatingsDiv = document.getElementById('savedRatings');
           savedRatingsDiv.innerHTML = ''; // Limpiar contenido previo
+          
+          if (savedRatings.length === 0) {
+            savedRatingsDiv.innerHTML = '<p class="sinCalificacion">No hay calificaciones guardadas.</p>'; // Mensaje si no hay calificaciones
+            return; // Salir de la función
+        }
+          
           savedRatings.forEach((entry, index) => {
               const ratingDiv = document.createElement('div');
               const starsDisplay = '★'.repeat(entry.rating) + '☆'.repeat(5 - entry.rating);
-              const comment = entry.comment ? `Comentario: ${entry.comment}` : 'Sin comentario';
-              ratingDiv.textContent = `Calificación ${index + 1}: ${starsDisplay} - ${comment}`;
+              const comment = entry.comment ? `${entry.comment}` : '';
+            //   const comment = entry.comment ? `Comentario: ${entry.comment}` : 'Sin comentario';
+              ratingDiv.innerHTML = `<div class="resena">
+              <span class="calificacion">Calificación ${index + 1}</span>: <span class="estrellas">${starsDisplay}</span>
+                <span class="form-control comentario">${comment}</span></div>`;
+            //   ratingDiv.textContent = `Calificación ${index + 1}: ${starsDisplay} - ${comment}`;
               savedRatingsDiv.appendChild(ratingDiv);
           });
       }
   
       // Limpiar todas las calificaciones y comentarios
-      document.getElementById('clearRatings').addEventListener('click', function() {
-          localStorage.removeItem(`userRatings_${productId}`); // Limpiar solo las calificaciones del producto actual
-          savedRatings.length = 0; // Limpiar el array en memoria
-          displaySavedRatings();
-      });
+    //   document.getElementById('clearRatings').addEventListener('click', function() {
+    //       localStorage.removeItem(`userRatings_${productId}`); // Limpiar solo las calificaciones del producto actual
+    //       savedRatings.length = 0; // Limpiar el array en memoria
+    //       displaySavedRatings();
+    //   });

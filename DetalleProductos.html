@@ -93,7 +93,7 @@
           </div>
           <!-- Reseñas -->
           <div class="row">
-            <h2>Selecciona tu calificación:</h2>
+            <h2>Califica el producto</h2>
             <div id="stars">
                 <span class="star" data-value="1">&#9733;</span>
                 <span class="star" data-value="2">&#9733;</span>
@@ -102,15 +102,16 @@
                 <span class="star" data-value="5">&#9733;</span>
             </div>
             <div class="comment-box">
-                <textarea id="userComment" rows="4" cols="50" placeholder="Deja un comentario (opcional)"></textarea>
+                <textarea id="userComment" class="form-control" rows="3" placeholder="Añade un comentario (opcional)"></textarea>
                 <br>
-                <button id="saveRating" disabled onclick="location.reload();" class="btn btn-dark">Guardar Calificación y Comentario</button>
-                <p id="feedback" class="feedback"></p>
+                <button type="button" id="saveRating" disabled onclick="location.reload();" class="btn btn-dark">Enviar reseña</button>
+                <button type="button" class="btn btn-dark" onclick="location.reload();">Cancelar</button>
             </div>
-            <h3>Calificaciones y Comentarios Anteriores:</h3>
-            <div id="savedRatings"></div>
-            <button id="clearRatings">Limpiar Todas las Calificaciones</button>
           </div>
+          <div class="row resenas">
+            <h3>Calificaciones anteriores:</h3>
+            <div id="savedRatings"></div>
+          </div>          
           <!-- Fin reseñas -->
           <div class="row link">
             <h2><a href="./Devolucion.html">Cambios y Devoluciones</a></h2>
@@ -126,9 +127,9 @@
       <footer>      
         <div class="container-fluid">
     <h4>Contáctenos</h4>
-          <a href="https://www.facebook.com/osvaldoquesadafotografo?mibextid=ZbWKwL"><img src="./Imagenes/social_facebook.png" alt="instagram" style="width: 5%;">
+          <a href="https://www.facebook.com/osvaldoquesadafotografo?mibextid=ZbWKwL"><img src="./Imagenes/social_facebook.png" alt="facebook" style="width: 5%;">
     </a>
-    <a href="https://wa.me/qr/DXZ2EVTI2BHXD1 "><img src="./Imagenes/whatsapp_icon.png" alt="instagram" style="width: 5%;">
+    <a href="https://wa.me/qr/DXZ2EVTI2BHXD1 "><img src="./Imagenes/whatsapp_icon.png" alt="whatsapp" style="width: 5%;">
     </a>
         </div>   
          <hr>
