@@ -24,6 +24,7 @@
   .imagenGaleria {
     width: 80%;
     height: auto;
+    margin-bottom: 5%;
   }
   
   .colImagen {
@@ -44,7 +45,6 @@
   }
 
   .imagen {
-    margin-right: 5%;
     margin-bottom: 5%;
   }
 
