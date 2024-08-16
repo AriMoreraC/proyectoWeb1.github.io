@@ -40,12 +40,11 @@
       <div class="container-fluid p-3">
         <!-- Imagen principal -->
         <div class="row">
-          <div class="col-4">
-            <img id="Imagen" class="card-img-top detalle" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif"
-              alt="Imagen"/>
+          <div class="col-12 col-md-4 imagen">
+            <img id="Imagen" class="card-img-top detalle" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif" alt="Imagen"/>
           </div>
           <!-- Card del producto -->
-          <div class="col-8">
+          <div class="col-12 col-md-7">
             <ul class="list-group detalle">
               <li class="list-group-item nombreProducto">
                 <h2 id="Nombre" class="card-title">Nombre producto</h2>
@@ -79,46 +78,51 @@
               </li>
             </ul>
           </div>
-          <!-- Galería de imágenes -->
-          <div class="row galeria">
-            <div class="col-4 colImagen">
-              <img id="Imagen1" class="card-img-top detalle imagenGaleria" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif" alt="Imagen1">
-            </div>
-            <div class="col-4 colImagen">
-              <img id="Imagen2" class="card-img-top detalle imagenGaleria" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif" alt="Imagen2">
-            </div>
-            <div class="col-4 colImagen">
-              <img id="Imagen3" class="card-img-top detalle imagenGaleria" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif" alt="Imagen3">
-            </div>
+        </div>
+        
+        <!-- Galería de imágenes -->
+        <div class="row galeria">
+          <div class="col-12 col-md-4 colImagen">
+            <img id="Imagen1" class="card-img-top detalle imagenGaleria" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif" alt="Imagen1">
           </div>
-          <!-- Reseñas -->
-          <div class="row">
-            <h2>Califica el producto</h2>
-            <div id="stars">
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="2">&#9733;</span>
-                <span class="star" data-value="3">&#9733;</span>
-                <span class="star" data-value="4">&#9733;</span>
-                <span class="star" data-value="5">&#9733;</span>
-            </div>
-            <div class="comment-box">
-                <textarea id="userComment" class="form-control" rows="3" placeholder="Añade un comentario (opcional)"></textarea>
-                <br>
-                <button type="button" id="saveRating" disabled onclick="location.reload();" class="btn btn-dark">Enviar reseña</button>
-                <button type="button" class="btn btn-dark" onclick="location.reload();">Cancelar</button>
-            </div>
+          <div class="col-12 col-md-4 colImagen">
+            <img id="Imagen2" class="card-img-top detalle imagenGaleria" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif" alt="Imagen2">
           </div>
-          <div class="row resenas">
-            <h3>Calificaciones anteriores:</h3>
-            <div id="savedRatings"></div>
-          </div>          
-          <!-- Fin reseñas -->
-          <div class="row link">
-            <h2><a href="./Devolucion.html">Cambios y Devoluciones</a></h2>
-            <h2><a href="./Contacto.html">Contacto y ayuda</a></h2>
+          <div class="col-12 col-md-4 colImagen">
+            <img id="Imagen3" class="card-img-top detalle imagenGaleria" style="max-height:460px;" role="img" src="./Imagenes/NoEncontrado.avif" alt="Imagen3">
           </div>
         </div>
+      
+        <!-- Reseñas -->
+        <div class="row">
+          <h2>Califica el producto</h2>
+          <div id="stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+          <div class="comment-box">
+            <textarea id="userComment" class="form-control" rows="3" placeholder="Añade un comentario (opcional)"></textarea>
+            <br>
+            <button type="button" id="saveRating" disabled onclick="location.reload();" class="btn btn-dark">Enviar reseña</button>
+            <button type="button" class="btn btn-dark" onclick="location.reload();">Cancelar</button>
+          </div>
+        </div>
+        
+        <div class="row resenas">
+          <h3>Calificaciones anteriores:</h3>
+          <div id="savedRatings"></div>
+        </div>          
+        <!-- Fin reseñas -->
+        
+        <div class="row link">
+          <h2><a href="./Devolucion.html">Cambios y Devoluciones</a></h2>
+          <h2><a href="./Contacto.html">Contacto y ayuda</a></h2>
+        </div>
       </div>
+      
   </main>
 
     <!-- Footer inicio -->

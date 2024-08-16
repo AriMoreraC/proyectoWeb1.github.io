@@ -43,17 +43,21 @@
     background-color: #e4e4e4;
   }
 
+  .imagen {
+    margin-right: 5%;
+  }
+
 /* Reseñas */
 .star {
   font-size: 2rem;
   cursor: pointer;
-  color: gray; /* Color gris por defecto */
+  color: gray; 
 }
 .star.selected {
-  color: gold; /* Color dorado cuando está seleccionada */
+  color: gold;
 }
 .star.hover {
-  color: gold; /* Color dorado cuando el ratón está sobre la estrella */
+  color: gold;
 }
 .comment-box {
   margin-top: 10px;
