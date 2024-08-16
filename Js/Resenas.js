@@ -65,7 +65,7 @@ const stars = document.querySelectorAll('.star');
           savedRatingsDiv.innerHTML = ''; // Limpiar contenido previo
           
           if (savedRatings.length === 0) {
-            savedRatingsDiv.innerHTML = '<p class="sinCalificacion">No hay calificaciones guardadas.</p>'; // Mensaje si no hay calificaciones
+            savedRatingsDiv.innerHTML = '<p class="sinCalificacion">No hay calificaciones para este producto.</p>'; // Mensaje si no hay calificaciones
             return; // Salir de la función
         }
           
