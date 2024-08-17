@@ -2,135 +2,22 @@
     text-shadow: 5px 5px 10px #53fabd;
     text-align: center;
     margin: 0.5%;
-  }
-
-.grid {
-    display: grid;
-    max-width: 80%;
-    grid-template-columns: auto auto;
-    text-align: center;
-    padding: 1em;
-    margin-left: 10%;
-}
-.tituloSecundario {
-    text-align: center;
-    font-size: 2rem;
-    color: #fff;
-    background-color: #4c3479;
-    box-shadow: 4px 4px 6px #26AB2E;
-  }
-.gridTitulo {
-    font-weight: bold;
-    border: 1px solid black;
-    background-color: #266aae;
-    box-shadow: 4px 4px 6px #26AB2E;
-    color: #fff;
-    padding: 1em;
-    font-size: 2em;
-    align-items: center;
 }
 
-.gridItem {
-    
+.colContacto {
     border: 1px solid black;
     padding: 1em;
+    font-size: 1.5rem;
+}
+
+.infoContacto {
+    margin-top: 2%;
+}
+
+.colInterna {
     display: flex;
-    text-align: center;
     align-items: center;
     img {
-        max-width: 15%;
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-    p {
-        font-size: 1.5vw;
-        text-align: justify;
-        margin-right: 5%;
-        b {
-            color: #26AB2E;
-        }
-    }
-}
-
-.form {
-    padding: 1em;
-    font-size: 1.5vw;
-    border: 1px solid #4c3479;
-    margin: 1em;
-    .datos {
-        border-bottom: 2px dashed #4c3479;
-    }
-    .servicios {
-        border-bottom: 2px dashed black;
-        padding-bottom: 1em;
-        input[type="radio"] {
-            margin-right: 0;
-            margin-left: 5%;
-            margin-top: 2%;
-        }
-        legend {
-            padding: 1%;
-        }
-    }
-    .mensaje {
-        input[type="text"] {
-            min-width: 86%;
-            padding: 0.3em;
-        }
-    }
-    input {
-        margin-right: 5%;
-        margin-bottom: 5%;
-        font-size: 1.5vw;
-        padding: 0.3em;
-    }
-    select {
-        margin-bottom: 5%;
-        width: 12em;
-        font-size: 1.5vw;
-        padding: 0.3em;
-        option {
-            font-size: 1.5vw;
-        }
-    }
-    label {
-        margin-right: 1%;
-    }
-    textarea {
-        margin-right: 5%;
-        margin-top: 1%;
-        padding: 1em;
-        min-width: 100%;
-        max-width: 100%;
-        min-height: 15em;
-        font-size: 1.5vw;
-    }
-    input[type="reset"] {
-        background-color: #266aae;
-        color: white;
-        border: 2px solid black;
-        cursor: pointer;
-        padding: 0.5em;
-        font-size: 2vw;
-        margin-bottom: 0;
-        margin-top: 5%;
-        font-weight: bold;
-    }
-    input[type="reset"]:hover {
-        background-color: rgb(48, 66, 223);
-    }
-    input[type="submit"] {
-        background-color: #26AB2E;
-        color: white;
-        border: 2px solid black;
-        cursor: pointer;
-        padding: 0.5em;
-        font-size: 2vw;
-        margin-bottom: 0;
-        margin-top: 5%;
-        font-weight: bold;
-    }
-    input[type="submit"]:hover {
-        background-color: green;
+        width: 50%;
     }
 }
