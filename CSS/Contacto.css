@@ -31,28 +31,29 @@
 }
 
 .colInterna img {
-    max-width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 40%;
+    height: auto;
 }
 
 /* Estilos específicos para dispositivos móviles */
 @media (max-width: 767px) {
     .colTitulo {
-        font-size: 2rem; /* Reduce el tamaño del texto en dispositivos móviles */
-        padding: 0.5em; /* Ajusta el padding para un mejor ajuste */
+        font-size: 2rem;
+        padding: 0.5em;
     }
 
     .colContacto {
-        font-size: 1.2rem; /* Reduce el tamaño del texto en dispositivos móviles */
-        padding: 0.5em; /* Ajusta el padding para un mejor ajuste */
+        font-size: 1.2rem;
+        padding: 0.5em;
     }
 
     .colInterna {
-        flex-direction: column; /* Cambia la dirección del flex para apilar verticalmente */
-        text-align: center; /* Centra el texto e imágenes en dispositivos móviles */
+        flex-direction: column;
+        text-align: center;
     }
 
     .colInterna img {
-        max-width: 80%; /* Ajusta el tamaño máximo de la imagen en dispositivos móviles */
+        max-width: 80%;
+        margin-top: 2%;
     }
 }
