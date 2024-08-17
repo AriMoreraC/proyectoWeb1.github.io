@@ -36,7 +36,7 @@ function addToCart(element) {
 	localStorage.setItem('compra',JSON.stringify(cartArray))
 	//Notificar Guardar
 	console.log(JSON.parse(localStorage.getItem('compra')))
-	$.notify("Libro agregado: "+nombre,"sucess")
+	$.notify("Producto o Servicio agregado: "+nombre,"sucess")
 }
 function removeCartItem(id) {
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
