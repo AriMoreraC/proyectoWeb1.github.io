@@ -5,24 +5,28 @@
 }
 
 .colContacto {
-    max-width: 100%; 
+    /* max-width: 100%;  */
     border: 1px solid black;
     padding: 1em;
     font-size: 1.5rem;
 }
 
 .colTitulo {
-    max-width: 100%;
+    /* max-width: 100%; */
     border: 1px solid black;
     padding: 1em;
     font-size: 3rem;
 }
 
 .colInterna {
-    max-width: 100%;
+    /* max-width: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#numTelefono {
+    margin-left: -50%;
 }
 
 .colInterna p {
@@ -54,6 +58,10 @@
     .colInterna {
         flex-direction: column;
         text-align: center;
+    }
+
+    #numTelefono {
+        margin-left: 0;
     }
 
     .colInterna img {
