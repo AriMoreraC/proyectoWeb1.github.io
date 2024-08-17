@@ -46,8 +46,8 @@
 
 @media (max-width: 767px) {
     .subtitulo {
-        margin-top: 5%;
-        margin-bottom: 5%;
+        /* margin-top: 5%;
+        margin-bottom: 5%; */
     }
 
     .colTitulo {
