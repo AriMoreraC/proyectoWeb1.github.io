@@ -1,7 +1,7 @@
 .subtitulo {
     text-shadow: 5px 5px 10px #53fabd;
     text-align: center;
-    margin: 2%;
+    margin: 0.5%;
 }
 
 .colContacto {
@@ -45,6 +45,10 @@
 }
 
 @media (max-width: 767px) {
+    .subtitulo {
+        margin: 50%;
+    }
+
     .colTitulo {
         font-size: 2rem;
         padding: 0.5em;
