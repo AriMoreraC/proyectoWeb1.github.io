@@ -4,7 +4,6 @@
     margin: 0.5%;
 }
 
-/* Estilos generales */
 .colContacto {
     max-width: 100%; 
     border: 1px solid black;
@@ -33,6 +32,11 @@
 .colInterna img {
     max-width: 40%;
     height: auto;
+}
+
+#mapa {
+    height: 30em;
+    max-width: 100%;
 }
 
 /* Estilos específicos para dispositivos móviles */

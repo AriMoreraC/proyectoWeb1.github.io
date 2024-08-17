@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./CSS/Principal.css">
     <link rel="stylesheet" href="./CSS/Contacto.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -49,7 +50,7 @@
                 <img src="./Imagenes/Icono llamada.png" alt="Teléfono">
               </div>
               <div class="col colInterna" style="font-size: 1.2em;">
-                <p><b>+506</b> 24486660</p>
+                <p style="margin-left: -50%;"><b>+506</b> 24486660</p>
               </div>
             </div>
           </div>
@@ -78,73 +79,10 @@
         </div>
       </div>
       <!-- Ubicación con api -->
-      <div>
-
+      <div class="container text-center">
+        <h2 class="subtitulo" style="margin-top: 2%; margin-bottom: 2%;">Ubicación de la empresa en el mapa</h2>
+        <div id="mapa"></div>
       </div>
-
-      <!-- Formulario de contacto -->
-
-        <!-- <h1 class="tituloSecundario">Formulario de contacto</h1>
-        <form class="form" method="post" name="formulario" id="formulario">
-            <div class="datos">
-                <label for="Nombre">Nombre y apellido</label>
-                <input type="text" id="Nombre" name="Nombre" 
-                title="El nombre es obligatorio" required>
-                <label for="Correo">Correo electrónico</label>
-                <input type="email" id="Correo" name="Correo" 
-                placeholder="correo@gmail.com" title="Correo no válido" required>
-                <br>
-                <label for="Telefono">Teléfono</label>
-                <input type="tel" id="Telefono" name="Telefono" 
-                placeholder="+506 12345678" pattern="[0-9+ ]{13}" 
-                title="Teléfono no válido" required>            
-                <label for="listaProvincias">Provincia</label>
-                <select name="listaProvincias" id="listaProvincias" 
-                title="Seleccione una Provincia" required>
-                    <option value="" disabled selected hidden>Seleccione</option>
-                    <option value="Alajuela">Alajuela</option>
-                    <option value="San José">San José</option>
-                    <option value="Heredia">Heredia</option>
-                    <option value="Cartago">Cartago</option>
-                    <option value="Limón">Limón</option>
-                    <option value="Puntarenas">Puntarenas</option>
-                    <option value="Guanacaste">Guanacaste</option>
-                </select>
-            </div>            
-            <br>
-            <div class="servicios">
-                <label for="listaServicios">Servicio</label>
-                <select name="listaServicios" id="listaServicios" 
-                title="Seleccione un servicio" required>
-                    <option value="" disabled selected hidden>Seleccione</option>
-                    <option value="Construcción">Construcción</option>
-                    <option value="Fontanería">Fontanería</option>
-                    <option value="Pintura">Pintura</option>
-                    <option value="Electricidad">Electricidad</option>
-                    <option value="Herrería">Herrería</option>
-                    <option value="Carpintería">Carpintería</option>
-                    <option value="Trampas de grasa">Trampas de grasa</option>
-                </select>
-                <fieldset>
-                    <legend>Tipo de servicio</legend>
-                    <input type="radio" id="Mantenimiento" name="TipoServicio" required>
-                    <label for="Mantenimiento">Mantenimiento</label>
-                    <input type="radio" id="Urgente" name="TipoServicio" required>
-                    <label for="Urgente">Urgente</label>
-                </fieldset>
-            </div>
-            <br>
-            <div class="mensaje">
-                <label for="Asunto">Asunto</label>
-                <input type="text" name="Asunto" id="Asunto" required>
-                <br>
-                <label for="Mensaje">Mensaje</label>
-                <br>
-                <textarea name="Mensaje" id="Mensaje" required></textarea>
-                <input type="reset" value="Cancelar" id="btnCancelar">
-                <input type="submit" value="Enviar" id="btnEnviar">
-            </div>
-        </form> -->
     </main>
   <!-- Footer inicio -->
   <footer>      
@@ -166,5 +104,7 @@
     <!-- Footer fin -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./Js/Contacto.js"></script>
 </body>
 </html>
