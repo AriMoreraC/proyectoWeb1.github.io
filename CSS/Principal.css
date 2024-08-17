@@ -47,6 +47,8 @@ main{
 
 }
 
-footer a{
-  color: #000;
+footer a i{
+  color: #fff;
+  font-size: 200%;
+  list-style: none;
 }
