@@ -19,7 +19,7 @@ function detalle(id) {
                       <h1 class="card-title">&cent;${prod.Precio}</h1>
                       <div class="d-grid gap-2">
                         <button type="button" class="btn btn-outline-dark" onclick="detalle(${prod.id})">Ver Detalle</button>
-                        <button type="button" class="btn btn-outline-dark" onclick="comprarProd(this)" data-id="(${prod.id})">Comprar</button>
+                        <button type="button" class="btn btn-outline-dark" onclick="addToCart(this)" data-id="(${prod.id})">Comprar</button>
                       </div>
 
                   </div>
