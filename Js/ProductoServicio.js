@@ -8,15 +8,15 @@ function detalle(id) {
     productos.forEach((prod) => {
       const cardProd = `
                 <div class="col">
-              <div class="card shadow-sm text-center">
+              <div class="card shadow-sm text-center item">
                   <div class="card-header">
-                      <h4 class="card-title">${prod.Nombre}</h4>
+                      <h4 class="card-title item-nombre">${prod.Nombre}</h4>
                   </div>
                   <img src="${prod.Imagen ? prod.Imagen : './Imagenes/NoEncontrado.avif'}" class="card-img-top" style="max-height:460px;" role="img"  class="img-fluid" 
                       alt="Imagen" />
                   <div class="card-body">
                       <p class="card-title"></p>
-                      <h1 class="card-title">&cent;${prod.Precio}</h1>
+                      <h1 class="card-title item-precio">&cent;${prod.Precio}</h1>
                       <div class="d-grid gap-2">
                         <button type="button" class="btn btn-outline-dark" onclick="detalle(${prod.id})">Ver Detalle</button>
                         <button type="button" class="btn btn-outline-dark" onclick="addToCart(this)" data-id="(${prod.id})">Comprar</button>
