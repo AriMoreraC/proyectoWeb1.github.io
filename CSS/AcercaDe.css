@@ -21,6 +21,10 @@ margin: 0.5%;
 .body-redes{
     justify-content: center;
     text-align: center;
+        a  {
+        color: #fff;
+        font-size: 200%;
+    }
 }
 
 .subtitulo {
