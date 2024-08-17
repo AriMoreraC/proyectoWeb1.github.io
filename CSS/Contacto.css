@@ -5,21 +5,18 @@
 }
 
 .colContacto {
-    /* max-width: 100%;  */
     border: 1px solid black;
     padding: 1em;
     font-size: 1.5rem;
 }
 
 .colTitulo {
-    /* max-width: 100%; */
     border: 1px solid black;
     padding: 1em;
     font-size: 3rem;
 }
 
 .colInterna {
-    /* max-width: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,11 +40,18 @@
     max-width: 100%;
 }
 
-/* Estilos específicos para dispositivos móviles */
+.contacto {
+    margin-top: 2%;
+}
+
 @media (max-width: 767px) {
     .colTitulo {
         font-size: 2rem;
         padding: 0.5em;
+    }
+
+    .contacto {
+        margin: 10%;
     }
 
     .colContacto {
