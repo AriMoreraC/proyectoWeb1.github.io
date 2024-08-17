@@ -1,0 +1,17 @@
+.contenedor{
+    justify-items: center;
+    justify-content: center;
+    
+}
+.contenedor-info{
+    justify-items: center;
+    justify-content: center;
+
+}
+.info{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.paginacion{
+    margin: 2%;
+}
