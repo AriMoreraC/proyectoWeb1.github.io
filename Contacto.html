@@ -90,33 +90,34 @@
       <!-- Formulario de Contacto -->
       <h1 class="subtitulo">Formulario de Contacto</h1>
       <div class="container">
-        <div class="card">
+        <div class="card" style="background-color: #f9f9f9; border: 1px solid black;">
           <div class="card-body">
             <form>
               <div class="row mb-3">
                 <div class="col-md-6">
                   <label for="nombre" class="form-label">Nombre completo</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Pedro González Perez" required>
+                  <input type="text" style="border: 1px solid black;" class="form-control" id="nombre" placeholder="Pedro González Perez" required>
                 </div>
                 <div class="col-md-6">
                   <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com" required>
+                  <input type="email" style="border: 1px solid black;" class="form-control" id="email" placeholder="ejemplo@gmail.com" required>
                 </div>
               </div>
               <div class="row mb-3">
                 <div class="col-md-6">
                   <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
-                  <input type="date" class="form-control" id="fechaNacimiento" required>
+                  <input type="date" style="border: 1px solid black;" class="form-control" id="fechaNacimiento" required>
                   <div id="error-edadMenor" class="text-danger mt-2" style="display:none;">Debe tener al menos 12 años para llenar este formulario.</div>
+                  <div id="error-edadMayor" class="text-danger mt-2" style="display:none;">Fecha de nacimiento no válida.</div>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label d-block">Género</label>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="genero" id="masculino" value="M" required>
+                    <input class="form-check-input" style="border: 1px solid black;" type="radio" name="genero" id="masculino" value="M" required>
                     <label class="form-check-label" for="masculino">M</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="genero" id="femenino" value="F">
+                    <input class="form-check-input" style="border: 1px solid black;" type="radio" name="genero" id="femenino" value="F">
                     <label class="form-check-label" for="femenino">F</label>
                   </div>
                 </div>
@@ -124,7 +125,7 @@
               <div class="row mb-3">
                 <div class="col-md-6">
                   <label for="provincia" class="form-label">Provincia</label>
-                  <select class="form-select" id="provincia" aria-label="Select Provincias" required>
+                  <select class="form-select" style="border: 1px solid black;" id="provincia" aria-label="Select Provincias" required>
                     <option disabled selected>Elija su provincia</option>
                     <option value="Alajuela">Alajuela</option>
                     <option value="San Jose">San José</option>
@@ -138,13 +139,26 @@
                 </div>
                 <div class="col-md-6">
                   <label for="telefono" class="form-label">Número de teléfono</label>
-                  <input type="tel" class="form-control" id="telefono" placeholder="+506 11112222" 
+                  <input type="tel" style="border: 1px solid black;" class="form-control" id="telefono" placeholder="+506 11112222" 
                     pattern="\+506\s[0-9]{8}" required>
                 </div>              
               </div>
               <div class="row mb-3">
                 <div class="col-md-6">
+                  <label for="asunto" class="form-label">Asunto</label>
+                  <input type="text" style="border: 1px solid black;" class="form-control" id="asunto" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" style="border: 1px solid black;" id="mensaje" rows="3" required></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
                   <button type="submit" class="btn btn-dark">Enviar</button>
+                  <button type="reset" class="btn btn-dark" onclick="location.reload();">Cancelar</button>
                 </div>
               </div>
             </form>
