@@ -3,43 +3,27 @@ const productos = [
         "id": 1,
         "Nombre": "Retablo borde negro",
         "Descripcion": "Retablo de 12x16 pulgadas, con borde negro de 1 cm de buena calidad.",
-        "Imagen": "",
+        "Imagen": "./Imagenes/Retablo borde2.jpg",
         "Precio": 42700,
         "TiempoEntrega": "De una a dos semanas.",
-        "CostoEnvio": 0,
+        "CostoEnvio": 500,
         "Stock": "Disponible online y en tienda física.",
         "OpcionesEntrega": "Recogida en tienda.",
         "Garantia": "30 años contra defectos de fábrica, no cubre golpes o rayas a partir de una incorrecta manipulación.",
         "Categorias": ["Retablos"],
         "GaleriaImagenes": {
-            "Imagen1": "",
-            "Imagen2": "",
-            "Imagen3": ""
+            "Imagen1": "./Imagenes/Retablo borde.webp",
+            "Imagen2": "./Imagenes/Retablo borde2.jpg",
+            "Imagen3": "./Imagenes/Retablo borde3.webp"
         }
     },
-    {
-        "id": 2,
-        "Nombre": "Retablo bastidor",
-        "Descripcion": "Retablo de 16x20 pulgadas, de borde tipo bastidor (borde a los lados de 1.5 cm color negro).",
-        "Imagen": "",
-        "Precio": 38700,
-        "TiempoEntrega": "De una a dos semanas.",
-        "CostoEnvio": 0,
-        "Stock": "Disponible online y en tienda física.",
-        "OpcionesEntrega": "Recogida en tienda.",
-        "Garantia": "30 años contra defectos de fábrica, no cubre golpes o rayas a partir de una incorrecta manipulación.",
-        "Categorias": ["Retablos"],
-        "GaleriaImagenes": {
-            "Imagen1": "",
-            "Imagen2": "",
-            "Imagen3": ""
-        }
-    },
+
+
      {
         "id": 3,
         "Nombre": "Impresiones 4x6",
         "Descripcion": "Impresiones de fotografías 4x6 pulgadas en papel fotográfico. Para esto se solicita ir al establecimiento para tomar las fotos o enviar via correo la fotografia que desee con el numero de pedido y sus datos.",
-        "Imagen": "./Imagenes/NoEncontrado.avif",
+        "Imagen": "./Imagenes/impresion3de4x6.webp",
         "Precio": 450,
         "TiempoEntrega": "Inmediata.",
         "CostoEnvio": 0,
@@ -48,16 +32,16 @@ const productos = [
         "Garantia": "No aplica garantía.",
         "Categorias": ["Impresiones"],
         "GaleriaImagenes": {
-            "Imagen1": "./Imagenes/NoEncontrado.avif",
-            "Imagen2": "./Imagenes/NoEncontrado.avif",
-            "Imagen3": "./Imagenes/NoEncontrado.avif"
+            "Imagen1": "./Imagenes/impresion3de4x6.webp",
+            "Imagen2": "./Imagenes/impresion4x6.webp",
+            "Imagen3": "./Imagenes/impresion2de4x6webp.jpg"
         }
     },
     {
         "id": 4,
         "Nombre": "Impresiones 6x8",
         "Descripcion": "Impresiones de fotografías 6x8 pulgadas en papel fotográfico. Para esto se solicita ir al establecimiento para tomar las fotos o enviar vía correo la fotografía que desee con el número de pedido y sus datos.",
-        "Imagen": "./Imagenes/NoEncontrado.avif",
+        "Imagen": "./Imagenes/impresion2de6x8.jpg",
         "Precio": 1900,
         "TiempoEntrega": "Inmediata.",
         "CostoEnvio": 0,
@@ -66,16 +50,16 @@ const productos = [
         "Garantia": "No aplica garantía.",
         "Categorias": ["Impresiones"],
         "GaleriaImagenes": {
-            "Imagen1": "./Imagenes/NoEncontrado.avif",
-            "Imagen2": "./Imagenes/NoEncontrado.avif",
-            "Imagen3": "./Imagenes/NoEncontrado.avif"
+            "Imagen2": "./Imagenes/impresion3de6x8.jpg",
+            "Imagen1": "./Imagenes/impresion6x8.jpg",
+            "Imagen3": "./Imagenes/impresion2de6x8.jpg"
         }
     },   
     {
         "id": 5,
         "Nombre": "Impresiones 8x10",
         "Descripcion": "Impresiones del 8x10 en papel fotográfico, este es el tamaño de impresión más grande que trabajamos. Para esto se solicita ir al establecimiento para tomar las fotos o enviar vía correo la fotografia que desee con el número de pedido y sus datos.",
-        "Imagen": "",
+        "Imagen": "./Imagenes/impresion3de8x10.webp ",
         "Precio": 3150,
         "TiempoEntrega": "Inmediata.",
         "CostoEnvio": 0,
@@ -84,19 +68,36 @@ const productos = [
         "Garantia": "No aplica Garantía",
         "Categorias": ["Impresiones"],
         "GaleriaImagenes": {
-            "Imagen1": "",
-            "Imagen2": "",
-            "Imagen3": ""
+            "Imagen1": "./Imagenes/impresion2de8x10.webp",
+            "Imagen2": "./Imagenes/impresion8x10.webp",
+            "Imagen3": "./Imagenes/impresion4de8x10.jpg"
         }
     },
-
+    {
+        "id": 2,
+        "Nombre": " Retablo fotografico,de borde tipo bastidor ",
+        "Descripcion": "Retablo de 16x20 pulgadas, de borde tipo bastidor (borde a los lados de 1.5 cm color negro).",
+        "Imagen": "./Imagenes/Retablo bastidor3.jpeg",
+        "Precio": 38700,
+        "TiempoEntrega": "De una a dos semanas.",
+        "CostoEnvio": 350,
+        "Stock": "Disponible online y en tienda física.",
+        "OpcionesEntrega": "Recogida en tienda.",
+        "Garantia": "30 años contra defectos de fábrica, no cubre golpes o rayas a partir de una incorrecta manipulación.",
+        "Categorias": ["Retablos"],
+        "GaleriaImagenes": {
+            "Imagen1": "./Imagenes/Retablo bastidor3.jpeg",
+            "Imagen2": "./Imagenes/Retablo bastidor2.png",
+            "Imagen3": "./Imagenes/retabloBestidor1.jpg"
+        }
+    },
     {
         "id": 6,
-        "Nombre": "Sesión familiar de 8 fotos",
+        "Nombre": "Sesión de 8 fotos",
         "Descripcion": "Sesión fotográfica, ya sea familiar o individual; la cual cuenta de 8 fotos diferentes, 7 fotos de 4x6 y 1 foto de 8x10 pulgadas. Para esto se solicita ir al establecimiento para tomar las fotos.",
         "Imagen": "./Imagenes/OQP6478.jpg",
         "Precio": 17000,
-        "TiempoEntrega": "Inmediata",
+        "TiempoEntrega": "De una a dos semanas.",
         "CostoEnvio": 100,
         "Stock": "Disponible online y en tienda física.",
         "OpcionesEntrega": "Impresas en tienda y digitales por drive.",
@@ -110,11 +111,11 @@ const productos = [
     },
     {
         "id": 7,
-        "Nombre": "Sesión familiar de 10 fotos",
+        "Nombre": "Sesión de 10 fotos",
         "Descripcion": "Sesión fotográfica, ya sea familiar o individual; la cual cuenta de 10 fotos diferentes, 9 fotos de 4x6 y 1 foto de 8x10 pulgadas. Para esto se solicita ir al establecimiento para tomar las fotos.",
         "Imagen": "./Imagenes/OQP3014.JPG",
         "Precio": 23000,
-        "TiempoEntrega": "Inmediata.",
+        "TiempoEntrega": "De una a dos semanas..",
         "CostoEnvio":120,
         "Stock": "Disponible online y en tienda física.",
         "OpcionesEntrega": "Impresas en tienda y digitales por drive.",
@@ -128,11 +129,11 @@ const productos = [
     },
     {
         "id": 8,
-        "Nombre": "Sesión familiar en exteriores, de 30 o más fotos",
+        "Nombre": "Sesión en exteriores",
         "Descripcion": "Sesión fotográfica en exteriores, ya sea familiar o individual; la cual cuenta de 30 o más fotos diferentes. Sesión fotográfica que cuenta con el precio más elevado debido al traslado del fotografo y su equipo.",
         "Imagen": "./Imagenes/OQP4121.JPG",
         "Precio": 50000,
-        "TiempoEntrega": "Inmediata.",
+        "TiempoEntrega": "De una a dos semanas..",
         "CostoEnvio": 0,
         "Stock": "Disponible online y en tienda física.",
         "OpcionesEntrega": "Impresas en tienda y digitales por drive.",
@@ -185,7 +186,7 @@ const productos = [
         "id": 11,
         "Nombre": "Fotografías de objetos cotidianos",
         "Descripcion": "Fotografía del objeto que desee, esta se debe llevar al establecimiento para tomar las fotos y traer el objeto que elija.",
-        "Imagen": "./Imagenes/NoEncontrado.avif",
+        "Imagen": "./Imagenes/objetos2.jpg",
         "Precio": 2080, 
         "TiempoEntrega": "Inmediata.",
         "CostoEnvio": 0,
@@ -194,9 +195,9 @@ const productos = [
         "Garantia": "15 días.",
         "Categorias": ["Fotografías para la venta"],
         "GaleriaImagenes": {            
-            "Imagen1": "./Imagenes/NoEncontrado.avif",
-            "Imagen2": "./Imagenes/NoEncontrado.avif",
-            "Imagen3": "./Imagenes/NoEncontrado.avif"
+            "Imagen1": "./Imagenes/objeto3.jpg",
+            "Imagen2": "./Imagenes/objeto1.jpg",
+            "Imagen3": "./Imagenes/objetos2.jpg"
         }
     },
     {
@@ -218,3 +219,4 @@ const productos = [
         }
     }
 ];
+

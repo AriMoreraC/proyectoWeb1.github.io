@@ -9,11 +9,11 @@ function detalle(id) {
       const cardProd = `
                 <div class="col">
               <div class="card shadow-sm text-center item">
-                  <div class="card-header">
-                      <h4 class="card-title item-nombre">${prod.Nombre}</h4>
-                  </div>
                   <img src="${prod.Imagen ? prod.Imagen : './Imagenes/NoEncontrado.avif'}" class="card-img-top" style="max-height:460px;" role="img"  class="img-fluid" 
                       alt="Imagen" />
+                 <div class="card-header">
+                      <h4 class="card-title item-nombre">${prod.Nombre}</h4>
+                  </div>
                   <div class="card-body">
                       <p class="card-title"></p>
                       <h1 class="card-title item-precio">&cent;${prod.Precio}</h1>

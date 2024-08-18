@@ -56,11 +56,14 @@
   <form class="needs-validation" novalidate>
       <div class="row g-3">
           <div class="col-md-6">
-              <label for="codigo" class="form-label">Código </label>
+              <label for="codigo" class="form-label">Digite el código BIN:</label>
               <div class="input-group">
                   <input type="text" class="form-control" id="codigo" placeholder="" required>
-                  <button type="button" class="btn btn-secondary" onclick="codigoBin(event)">Verificar </button>
-              </div>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    Pagar Compra
+                  </button>
+                  
+                </div>
               <div class="invalid-feedback" id="error">
                   Código es requerido.
               </div>
@@ -68,8 +71,28 @@
 
       </div>
   </form>
-
 </div>
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Advertencia</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3>¿Seguro que desea relizar su pago?</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" onclick="codigoBin(event)" data-bs-dismiss="modal" >Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="row g-1 info">
     <div class="col-md-1 col-lg-6 order-md-last">
         <h4 class="d-flex justify-content-between align-items-center mb-3">
