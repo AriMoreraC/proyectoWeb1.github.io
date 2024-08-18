@@ -6,3 +6,8 @@
     background-color: #b4b4b4;
 }
 
+.card{
+    img{
+        max-height: 80%;
+    }
+}
