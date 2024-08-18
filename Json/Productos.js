@@ -17,8 +17,6 @@ const productos = [
             "Imagen3": "./Imagenes/Retablo borde3.webp"
         }
     },
-
-
      {
         "id": 3,
         "Nombre": "Impresiones 4x6",
@@ -33,15 +31,15 @@ const productos = [
         "Categorias": ["Impresiones"],
         "GaleriaImagenes": {
             "Imagen1": "./Imagenes/impresion3de4x6.webp",
-            "Imagen2": "./Imagenes/impresion4x6.webp",
-            "Imagen3": "./Imagenes/impresion2de4x6webp.jpg"
+            "Imagen2": "./Imagenes/impresion3de6x8.jpg",
+            "Imagen3": "./Imagenes/impresion2de6x8.jpg"
         }
     },
     {
         "id": 4,
         "Nombre": "Impresiones 6x8",
         "Descripcion": "Impresiones de fotografías 6x8 pulgadas en papel fotográfico. Para esto se solicita ir al establecimiento para tomar las fotos o enviar vía correo la fotografía que desee con el número de pedido y sus datos.",
-        "Imagen": "./Imagenes/impresion2de6x8.jpg",
+        "Imagen": "./Imagenes/foto6x8.jpg",
         "Precio": 1900,
         "TiempoEntrega": "Inmediata.",
         "CostoEnvio": 0,
@@ -50,11 +48,11 @@ const productos = [
         "Garantia": "No aplica garantía.",
         "Categorias": ["Impresiones"],
         "GaleriaImagenes": {
-            "Imagen2": "./Imagenes/impresion3de6x8.jpg",
-            "Imagen1": "./Imagenes/impresion6x8.jpg",
+            "Imagen2": "./Imagenes/foto6x8.jpg",
+            "Imagen1": "./Imagenes/foto26x8.webp",
             "Imagen3": "./Imagenes/impresion2de6x8.jpg"
         }
-    },   
+    },  
     {
         "id": 5,
         "Nombre": "Impresiones 8x10",
