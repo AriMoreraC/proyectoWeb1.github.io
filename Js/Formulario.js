@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 className: "success",
                 position: "top center" // Centra la notificación en la parte superior
             });
-            // Después de un pequeño retraso para mostrar la notificación, envía el formulario
             setTimeout(function() {
                 form.submit(); // Envía el formulario después de la notificación
             }, 1700);
