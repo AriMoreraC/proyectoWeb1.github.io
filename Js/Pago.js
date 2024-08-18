@@ -28,6 +28,7 @@
     document.getElementById("nivel").textContent=data.CardTier
     document.getElementById("error").style.display="block"
     document.getElementById("error").innerText=""
+    $.notify("Compra Realizada con exitó", "warn");
         }
       
 
