@@ -56,20 +56,31 @@ function updateCartItemQty(element) {
 	var quantity=element.value
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
 	if(quantity==0 && quantity.trim()!=''){
+		$('#exampleModal').modal('show');
+		$('#aceptar').off('click').on('click', function()  {
+	if (cartArray) {
+		let index = cartArray.findIndex((obj) => obj.id == id);
+		cartArray.splice(index,1)
+		localStorage.setItem('compra',  JSON.stringify(cartArray))
+		showDetailShop(element)
+		$.notify("Producto o Servicio Eliminado de la Compra", "warn");
 
-		//removeZero()
-		return
-	}
+	}		
+		})
+	}else{
 	if (cartArray) {
 		let itemIndex = cartArray.findIndex((obj) => obj.id == id);
 		cartArray[itemIndex].cantidad=quantity
 		//Subtotal
 		
+	}		
 	}
+
 	//Guardar
 	localStorage.setItem('compra',  JSON.stringify(cartArray))
 	showDetailShop(element)
 } 
+ 
 
  function emptyCart() {
 	if (localStorage.getItem('compra')) {
