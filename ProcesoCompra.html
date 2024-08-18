@@ -80,7 +80,7 @@
                         </div>
                         <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
 
-                          <input min="0" name="quantity" value="1" type="number"
+                          <input min="0" name="quantity" value="1" type="number" data-bs-toggle="modal" id="quantity" 
                             class="form-control form-control-sm item-quantity" />
 
                         </div>
@@ -116,6 +116,23 @@
 
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Advertencia</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h3>¿Seguro que desea eliminar el producto o servicio?</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" id="aceptar"  data-bs-dismiss="modal" >Eliminar</button>
           </div>
         </div>
       </div>
