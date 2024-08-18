@@ -46,15 +46,15 @@
           </div>
           <!-- Card del producto -->
           <div class="col-12 col-md-8">
-            <ul class="list-group detalle">
+            <ul class="list-group detalle item">
               <li class="list-group-item nombreProducto">
-                <h2 id="Nombre" class="card-title">Nombre producto</h2>
+                <h2 id="Nombre" class="card-title item-nombre">Nombre producto</h2>
               </li>
               <li class="list-group-item">
                 <p id="Descripcion" class="card-text">Descripción:</p>
               </li>
               <li class="list-group-item">
-                <p id="Precio" class="card-text">Precio:</p>
+                <p id="Precio" class="card-text item-precio">Precio:</p>
               </li>
               <li class="list-group-item">
                 <p id="TiempoEntrega" class="card-text">Tiempo de entrega:</p>
@@ -75,7 +75,8 @@
                 <p id="Categorias" class="card-text">Categorías:</p>
               </li>
               <li class="list-group-item">
-                <button type="button" class="btn btn-dark btnCompra"><a href="./ProcesoCompra.html">Añadir al carrito</a></button>
+                <button type="button" class="btn btn-dark btnCompra" id="btnAgregarAlCarrito">Añadir al carrito</button>
+                <button type="button" class="btn btn-dark btnCompra" style="margin-left: 2%;"><a href="./ProductosServicios.html">Regresar</a></button>
               </li>
             </ul>
           </div>
@@ -148,8 +149,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./Js/notify.min.js"></script>
     <script src="./Json/Productos.js"></script>
     <script src="./Js/DetalleProductos.js"></script>
+    <!-- <script src="./Js/ProcesoCompra.js"></script> -->
     <script src="./Js/Resenas.js"></script>
   </body>
 </html>
