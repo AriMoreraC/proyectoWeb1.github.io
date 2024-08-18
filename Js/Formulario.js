@@ -20,14 +20,14 @@ document.getElementById('fechaNacimiento').addEventListener('change', function()
     var fechaMaxima = new Date('1920-01-01');
     var fechaMinima = new Date('2012-01-01');
     if (fechaNacimiento < fechaMinima) {
-        document.getElementById('error-edadMenor').style.display = 'none';
+        document.getElementById('error-edad').style.display = 'none';
     } else {
-        document.getElementById('error-edadMenor').style.display = 'block';
+        document.getElementById('error-edad').style.display = 'block';
     }
     if (fechaNacimiento >= fechaMaxima) {
-        document.getElementById('error-edadMayor').style.display = 'none';
+        document.getElementById('error-edad').style.display = 'none';
     } else {
-        document.getElementById('error-edadMayor').style.display = 'block';
+        document.getElementById('error-edad').style.display = 'block';
     }
 });
 document.querySelector('form').addEventListener('submit', function(event) {
@@ -35,12 +35,28 @@ document.querySelector('form').addEventListener('submit', function(event) {
     var fechaNacimiento = new Date(fecha);
     var fechaMaxima = new Date('1920-01-01');
     var fechaMinima = new Date('2012-01-01');
-    if (fechaNacimiento >= fechaMinima || fechaNacimiento < fechaMaxima) { // Que tenga al menos 12 años
+    if (fechaNacimiento >= fechaMinima || fechaNacimiento < fechaMaxima) {
         event.preventDefault(); // Evita el envío del formulario
-        document.getElementById('error-edadMenor').style.display = 'block';
+        document.getElementById('error-edad').style.display = 'block';
     }
-    if (fechaNacimiento < fechaMaxima || fechaNacimiento >= fechaMinima) { // Máximo 104 años
-        event.preventDefault(); // Evita el envío del formulario
-        document.getElementById('error-edadMayor').style.display = 'block';
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("Formulario");
+    if (form) {
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita el envío inmediato del formulario
+            
+            $.notify("Formulario enviado", {
+                className: "success",
+                position: "top center" // Centra la notificación en la parte superior
+            });
+            
+            // Después de un pequeño retraso para mostrar la notificación, envía el formulario
+            setTimeout(function() {
+                form.submit(); // Envía el formulario después de la notificación
+            }, 2000);
+        });
     }
 });
