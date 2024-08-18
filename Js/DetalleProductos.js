@@ -23,20 +23,26 @@ $(document).ready(function () {
           // }
           // Asignar el id del producto al botón
           $("#btnAgregarAlCarrito").attr("data-id", producto.id);
+      } else {
+        window.location.href = `ProductosServicios.html`;
+        alert("Producto no encontrado.");
       }
+  } else {
+    window.location.href = `ProductosServicios.html`;
+    alert("Producto no especificado.");
   }
 
-  // Función para añadir al carrito
+  // Función para añadir al carrito en el botón
   $("#btnAgregarAlCarrito").on("click", function () {
       let id = $(this).attr("data-id");
       addToCart(id);
   });
 });
 
+// Añadir al carrito
 function addToCart(id) {
   const producto = productos.find((p) => p.id == id);
   if (!producto) return;
-
   let cartItem = {
       id: producto.id,
       nombre: producto.Nombre,
@@ -44,18 +50,14 @@ function addToCart(id) {
       cantidad: 1,
       subTotal: parseFloat(producto.Precio)
   };
-
   let cartArray = JSON.parse(localStorage.getItem('compra')) || [];
-
   let seleccion = cartArray.findIndex((prod) => prod.id == id);
-
   if (seleccion != -1) {
       cartArray[seleccion].cantidad += 1;
       cartArray[seleccion].subTotal = cartArray[seleccion].precio * cartArray[seleccion].cantidad;
   } else {
       cartArray.push(cartItem);
   }
-
   localStorage.setItem('compra', JSON.stringify(cartArray));
   $.notify("Producto o Servicio agregado: " + producto.Nombre, "success");
 }
