@@ -9,7 +9,7 @@
         if(data.Status=='NOT FOUND'){
             document.getElementById("error").style.display="block"
             document.getElementById("error").innerText=
-                "Código Postal no encontrado"
+                "Código BIN no encontrado"
             throw new 
                 Error("Error: "+response.status+" "+response.statusText)
             console.log(response)
