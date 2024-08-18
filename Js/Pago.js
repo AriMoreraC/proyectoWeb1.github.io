@@ -27,17 +27,18 @@ async function codigoBin(event) {
             document.getElementById("nivel").textContent = data.CardTier
             document.getElementById("error").style.display = "block"
             document.getElementById("error").innerText = ""
-            let cartItem = {
-                medio: data.Scheme
-            }
-            if (localStorage.getItem('MedioPago')) {
-                localStorage.setItem('MedioPago', JSON.stringify(cartItem))
-                //Notificar Guardar
-                console.log(JSON.parse(localStorage.getItem('MedioPago')))
-                $.notify("Compra Realizada con exitó", "warn");
-            }
-
-
+  let cartItem = {
+        medio: data.Scheme
+    }
+    if (localStorage.getItem('MedioDePago')) {
+        localStorage.setItem('MedioDePago', JSON.stringify(cartItem))
+        //Notificar Guardar
+        console.log(JSON.parse(localStorage.getItem('MedioDePago')))
+       
+    }else{
+      localStorage.setItem('MedioDePago',JSON.stringify(cartItem))  
+    } 
+    $.notify("Compra Realizada con exitó", "warn");
         }
 
 
