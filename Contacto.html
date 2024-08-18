@@ -96,23 +96,23 @@
               <div class="row mb-3">
                 <div class="col-md-6">
                   <label for="nombre" class="form-label">Nombre completo</label>
-                  <input type="text" style="border: 1px solid black;" class="form-control" id="nombre" placeholder="Pedro González Perez" required value="das">
+                  <input type="text" style="border: 1px solid black;" class="form-control" id="nombre" placeholder="Pedro González Perez" required>
                 </div>
                 <div class="col-md-6">
                   <label for="email" class="form-label">Email</label>
-                  <input type="email" style="border: 1px solid black;" class="form-control" id="email" placeholder="ejemplo@gmail.com" required value="ejemplo@gmail.com">
+                  <input type="email" style="border: 1px solid black;" class="form-control" id="email" placeholder="ejemplo@gmail.com" required>
                 </div>
               </div>
               <div class="row mb-3">
                 <div class="col-md-6">
                   <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
-                  <input type="date" style="border: 1px solid black;" class="form-control" id="fechaNacimiento" required value="1999-01-01">
+                  <input type="date" style="border: 1px solid black;" class="form-control" id="fechaNacimiento" required>
                   <div id="error-edad" class="text-danger mt-2" style="display:none;">Fecha de nacimiento no válida.</div>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label d-block">Género</label>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" style="border: 1px solid black;" type="radio" name="genero" id="masculino" value="M" required checked>
+                    <input class="form-check-input" style="border: 1px solid black;" type="radio" name="genero" id="masculino" value="M" required>
                     <label class="form-check-label" for="masculino">M</label>
                   </div>
                   <div class="form-check form-check-inline">
@@ -126,7 +126,7 @@
                   <label for="provincia" class="form-label">Provincia</label>
                   <select class="form-select" style="border: 1px solid black;" id="provincia" aria-label="Select Provincias" required>
                     <option disabled selected>Elija su provincia</option>
-                    <option selected value="Alajuela">Alajuela</option>
+                    <option value="Alajuela">Alajuela</option>
                     <option value="San Jose">San José</option>
                     <option value="Heredia">Heredia</option>
                     <option value="Cartago">Cartago</option>
@@ -138,14 +138,14 @@
                 </div>
                 <div class="col-md-6">
                   <label for="telefono" class="form-label">Número de teléfono</label>
-                  <input type="tel" style="border: 1px solid black;" class="form-control" id="telefono" placeholder="+506 11112222" value="+506 11112222" 
+                  <input type="tel" style="border: 1px solid black;" class="form-control" id="telefono" placeholder="+506 11112222" 
                     pattern="\+506\s[0-9]{8}" required>
                 </div>              
               </div>
               <div class="row mb-3">
                 <div class="col-md-6">
                   <label for="asunto" class="form-label">Asunto</label>
-                  <input type="text" style="border: 1px solid black;" class="form-control" id="asunto" required value="e">
+                  <input type="text" style="border: 1px solid black;" class="form-control" id="asunto" required>
                 </div>
               </div>
               <div class="row mb-3">

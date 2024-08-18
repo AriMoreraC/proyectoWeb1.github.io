@@ -41,22 +41,20 @@ document.querySelector('form').addEventListener('submit', function(event) {
     }
 });
 
-
+// Mostrar el notify del envío de Formulario
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("Formulario");
     if (form) {
         form.addEventListener("submit", function(event) {
             event.preventDefault(); // Evita el envío inmediato del formulario
-            
             $.notify("Formulario enviado", {
                 className: "success",
                 position: "top center" // Centra la notificación en la parte superior
             });
-            
             // Después de un pequeño retraso para mostrar la notificación, envía el formulario
             setTimeout(function() {
                 form.submit(); // Envía el formulario después de la notificación
-            }, 2000);
+            }, 1700);
         });
     }
 });
