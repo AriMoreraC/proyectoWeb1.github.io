@@ -50,7 +50,7 @@
 
 <div class="contenedor-info">
 <div class="col  info">
-  <h4 class="h4"><b>Datos de Envió</b></h4>
+  <h4 class="h4"><b>Datos de Envío</b></h4>
   <form class="needs-validation" novalidate>
       <div class="row g-3">
           <div class="col">
@@ -63,8 +63,9 @@
                   
                 </div>
                 <!-- Mostrar el total -->
-                <!-- <h6 class="my-0">Total a pagar</h6>
-                <small class="text-body-secondary" id="totalPagar">0.00</small> -->
+                <div style="text-align: left; margin: 2%;">
+                  <h3 style="display: inline;">Total a pagar: </h3><span id="mostrar-total" style="font-size: 1.5rem;">&cent;0.00</span>
+                </div>
                 <!-- ... -->
               <div class="invalid-feedback" id="error">
                   Código es requerido.
@@ -177,15 +178,19 @@
 <script src="./Js/ProcesoCompra.js"></script>
 <script src="./Js/Pago.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Asegúrate de que 'totalPagar' es la clave correcta usada en ProcesoCompra.js para guardar el total
-    const detallesCompra = JSON.parse(localStorage.getItem('MedioDePago'));
-    if (detallesCompra && detallesCompra.totalPagar) {
-        document.getElementById('totalPagar').textContent = detallesCompra.totalPagar.toFixed(2);
-    } else {
-        console.log('No se encontraron detalles de compra en localStorage.');
-    }
-});
+  $(document).ready(function() {
+            var total = 0;
+            var cart = JSON.parse(localStorage.getItem('compra'));
+            if (cart) {
+                cart.forEach(function(item) {
+                    var precio = parseFloat(item.precio) || 0;
+                    var cantidad = parseInt(item.cantidad) || 0;
+                    total += precio * cantidad;
+                });
+            }
+            // Mostrar el total
+            $('#mostrar-total').text("¢" + total.toFixed(2));
+        });
 
 </script>
 </body>

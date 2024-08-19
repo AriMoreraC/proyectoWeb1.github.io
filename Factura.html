@@ -49,7 +49,7 @@
   <div class="card-body">
     <!-- <h5 class="card-title">Special title treatment</h5> -->
     <p>Tipo de tarjeta: <span id="medioPago"></span></p>
-    <p>Total: <span id="totalPagar"></span></p>
+    <p>Total: <span id="mostrar-total"></span></p>
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
 </div>
@@ -97,18 +97,21 @@
    <script src="./Js/notify.min.js"></script> 
 <script src="./Js/ProcesoCompra.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const medioDePago = JSON.parse(localStorage.getItem('MedioDePago'));
-    if (medioDePago) {
-        document.getElementById('medioPago').textContent = medioDePago.medio;
-        document.getElementById('totalPagar').textContent = medioDePago.totalPagar;
-    } else {
-        console.log('No hay datos de medio de pago en localStorage.');
-    }
-});
+  $(document).ready(function() {
+            var total = 0;
+            var cart = JSON.parse(localStorage.getItem('compra'));
+            if (cart) {
+                cart.forEach(function(item) {
+                    var precio = parseFloat(item.precio) || 0;
+                    var cantidad = parseInt(item.cantidad) || 0;
+                    total += precio * cantidad;
+                });
+            }
+            // Mostrar el total
+            $('#mostrar-total').text("¢" + total.toFixed(2));
+        });
 
-
-
+</script>
 </script>
 </body>
 
