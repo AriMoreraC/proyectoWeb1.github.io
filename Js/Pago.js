@@ -50,9 +50,7 @@
 
 // }
 
-
-
-
+ 
 async function codigoBin(event) {
     event.preventDefault();
     const codigo = document.getElementById("codigo").value;
