@@ -48,6 +48,7 @@ function addToCart(id) {
         nombre: producto.Nombre,
         precio: parseFloat(producto.Precio),
         cantidad: 1,
+        costo: parseFloat(producto.CostoEnvio),
         subTotal: parseFloat(producto.Precio)
     };
     let cartArray = JSON.parse(localStorage.getItem('compra')) || [];
