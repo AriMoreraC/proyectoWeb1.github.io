@@ -53,5 +53,4 @@ async function codigoBin(event) {
         console.log("Error: ", error)
     }
 
-} 
-
+}
