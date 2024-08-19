@@ -42,14 +42,14 @@
   <main class="container-fluid p-3">
 <h1>FACTURA</h1>
 
-<div class="card container text-center" style="max-width: 40%; margin-bottom: 5%;">
+<div class="card container text-center" style="max-width: 40%; margin-bottom: 5%; border: 1px solid black;">
   <div class="card-header">
     ESTUDIO MAGIAS
   </div>
   <div class="card-body">
     <!-- <h5 class="card-title">Special title treatment</h5> -->
-    <p>Medio de Pago: <span id="medioPago"></span></p>
-    <p>Total a Pagar: <span id="totalPagar"></span></p>
+    <p>Tipo de tarjeta: <span id="medioPago"></span></p>
+    <p>Total: <span id="totalPagar"></span></p>
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
 </div>
@@ -59,10 +59,10 @@
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
         <li class="page-item ">
-          <a class="page-link " href="./Pago.html" ><i class="bi bi-chevron-double-left"></i></a>
+          <a class="page-link " href="#" ><i class="bi bi-chevron-double-left"></i></a>
         </li>
-        <li class="page-item"><a class="page-link" href="./ProcesoCompra.html">1</a></li>
-        <li class="page-item"><a class="page-link" href="./Pago.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
         <li class="page-item active"><a class="page-link" href="./Factura.html">3</a></li>
         <li class="page-item">
           <a class="page-link" href="./Factura.html"><i class="bi bi-chevron-double-right"></i></a>
@@ -101,7 +101,6 @@
     const medioDePago = JSON.parse(localStorage.getItem('MedioDePago'));
     if (medioDePago) {
         document.getElementById('medioPago').textContent = medioDePago.medio;
-        // document.getElementById('costo').textContent = medioDePago.costo;
         document.getElementById('totalPagar').textContent = medioDePago.totalPagar;
     } else {
         console.log('No hay datos de medio de pago en localStorage.');
