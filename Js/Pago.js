@@ -27,10 +27,17 @@ async function codigoBin(event) {
             document.getElementById("nivel").textContent = data.CardTier
             document.getElementById("error").style.display = "block"
             document.getElementById("error").innerText = ""
-  let cartItem = {
-        medio: data.Scheme
-    }
+
     if (localStorage.getItem('MedioDePago')) {
+       var cart=JSON.parse(localStorage.getItem('MedioDePago'))
+       let cartItem = {
+        medio: data.Scheme, 
+        costo:cart.costo,
+        totalPagar:cart.totalPagar
+    }
+
+
+       
         localStorage.setItem('MedioDePago', JSON.stringify(cartItem))
         //Notificar Guardar
         console.log(JSON.parse(localStorage.getItem('MedioDePago')))
@@ -47,3 +54,4 @@ async function codigoBin(event) {
     }
 
 } 
+
