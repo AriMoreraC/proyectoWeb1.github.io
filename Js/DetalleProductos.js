@@ -33,32 +33,32 @@ $(document).ready(function () {
     }
   
     // Función para añadir al carrito en el botón
-    $("#btnAgregarAlCarrito").on("click", function () {
-        let id = $(this).attr("data-id");
-        addToCart(id);
-    });
+    // $("#btnAgregarAlCarrito").on("click", function () {
+    //     let id = $(this).attr("data-id");
+    //     addToCart(id);
+    // });
   });
   
 // Añadir al carrito
-function addToCart(id) {
-    const producto = productos.find((p) => p.id == id);
-    if (!producto) return;
-    let cartItem = {
-        id: producto.id,
-        nombre: producto.Nombre,
-        precio: parseFloat(producto.Precio),
-        cantidad: 1,
-        costo: parseFloat(producto.CostoEnvio),
-        subTotal: parseFloat(producto.Precio)
-    };
-    let cartArray = JSON.parse(localStorage.getItem('compra')) || [];
-    let seleccion = cartArray.findIndex((prod) => prod.id == id);
-    if (seleccion != -1) {
-        cartArray[seleccion].cantidad += 1;
-        cartArray[seleccion].subTotal = cartArray[seleccion].precio * cartArray[seleccion].cantidad;
-    } else {
-        cartArray.push(cartItem);
-    }
-    localStorage.setItem('compra', JSON.stringify(cartArray));
-    $.notify("Producto o Servicio agregado: " + producto.Nombre, "success");
-  }
+// function addToCart(id) {
+//     const producto = productos.find((p) => p.id == id);
+//     if (!producto) return;
+//     let cartItem = {
+//         id: producto.id,
+//         nombre: producto.Nombre,
+//         precio: parseFloat(producto.Precio),
+//         cantidad: 1,
+//         costo: parseFloat(producto.CostoEnvio),
+//         subTotal: parseFloat(producto.Precio)
+//     };
+//     let cartArray = JSON.parse(localStorage.getItem('compra')) || [];
+//     let seleccion = cartArray.findIndex((prod) => prod.id == id);
+//     if (seleccion != -1) {
+//         cartArray[seleccion].cantidad += 1;
+//         cartArray[seleccion].subTotal = cartArray[seleccion].precio * cartArray[seleccion].cantidad;
+//     } else {
+//         cartArray.push(cartItem);
+//     }
+//     localStorage.setItem('compra', JSON.stringify(cartArray));
+//     $.notify("Producto o Servicio agregado: " + producto.Nombre, "success");
+//   }

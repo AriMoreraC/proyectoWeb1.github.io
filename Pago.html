@@ -62,6 +62,10 @@
                   </button>
                   
                 </div>
+                <!-- Mostrar el total -->
+                <!-- <h6 class="my-0">Total a pagar</h6>
+                <small class="text-body-secondary" id="totalPagar">0.00</small> -->
+                <!-- ... -->
               <div class="invalid-feedback" id="error">
                   Código es requerido.
               </div>
@@ -172,6 +176,18 @@
    <script src="./Js/notify.min.js"></script> 
 <script src="./Js/ProcesoCompra.js"></script>
 <script src="./Js/Pago.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Asegúrate de que 'totalPagar' es la clave correcta usada en ProcesoCompra.js para guardar el total
+    const detallesCompra = JSON.parse(localStorage.getItem('MedioDePago'));
+    if (detallesCompra && detallesCompra.totalPagar) {
+        document.getElementById('totalPagar').textContent = detallesCompra.totalPagar.toFixed(2);
+    } else {
+        console.log('No se encontraron detalles de compra en localStorage.');
+    }
+});
+
+</script>
 </body>
 
 </html>
