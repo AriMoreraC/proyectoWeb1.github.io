@@ -5,13 +5,16 @@ function addToCart(element) {
 	let precio=$(ProdPadre).find('.item-precio').text()
 	precio= precio.substring(1,precio.length)
 	let nombre=$(ProdPadre).find('.item-nombre').text()
+	let costo=$(ProdPadre).find('.item-costo').text()
+	costo=costo.substring(1,costo.length)
 //Elemento del carrito
-		//{3,'Nombre'} {id:3,name:'Nombre'}
+		//{3,'Nombre'} {id:3,name:'Nombre'} 
 		let cartItem={
 			id,
 			nombre,
 			precio,
 			cantidad:1,
+			costo,
 			subTotal:precio*1
 		}
 	//Obtener carrito actual
@@ -92,7 +95,7 @@ function showDetailShop() {
 	var cartRowHTML = "";
 	var itemCount = 0;
 	var total = 0;
-
+	var costoTotalEnvio=0;
 	var precio = 0;
 	var quantity = 0;
 	var subTotal = 0;
@@ -104,6 +107,7 @@ function showDetailShop() {
 		
 			precio = parseFloat(item.precio) | 0;
 			quantity = parseInt(item.cantidad) | 0;
+			costoTotalEnvio += parseFloat(item.costo) | 0;
 			subTotal = precio * quantity
 
 			cartRowHTML += `<div class="row mb-4 d-flex justify-content-between align-items-center">
@@ -130,10 +134,54 @@ function showDetailShop() {
                       <hr class="my-4">`;
 
 			total += subTotal;
-		});
+		});		
+		document.getElementById('flexCheckChecked').addEventListener('change', function() { 
+			if (this.checked) {
+				costoTotalEnvio=costoTotalEnvio;
+		
+				$('#total-costo').text("¢" + costoTotalEnvio.toFixed(2))
+				
+			} else {
+				costoTotalEnvio=0;
+					$('#total-costo').text("¢" + costoTotalEnvio.toFixed(2))
+			}
+				total+=costoTotalEnvio;
+			$('#total-compra').text("¢" + total.toFixed(2));
+
+
+			
+			try{
+
+			
+			let cartItem = {
+				medio: "", 
+				costo:costoTotalEnvio,
+				totalPagar:total
+			}
+			if (localStorage.getItem('MedioDePago')) {
+				localStorage.setItem('MedioDePago', JSON.stringify(cartItem))
+
+			   
+			}else{
+			  localStorage.setItem('MedioDePago',JSON.stringify(cartItem))  
+			} 
+
+			} catch (error) {
+				console.log("Error: ", error)
+			}
+
+			 });
+
 	}
 
+	
+
+	
+	$('#total-costo').text("¢" + costoTotalEnvio.toFixed(2))
 	$('#detalle').html(cartRowHTML);
 	$('#total-items').text(itemCount);
 	$('#total-compra').text("¢" + total.toFixed(2));
+	console.log(JSON.parse(localStorage.getItem('MedioDePago')))
 }
+
+
