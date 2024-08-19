@@ -100,11 +100,11 @@
                     </div>                    
                     <div class="row">
                       <div class="col-md-4 col-lg-2 col-xl-7 offset-lg-1 ">
-                        <h5 class="mb-0">Costo de Envió:</h5>
+                        <h5 class="mb-0">Costo de Envío:</h5>
                          <div class=" form-check">
                         <input class="form-check-input" type="checkbox" value="" onclick="showDetailShop()" id="flexCheckChecked" >
                         <label class="form-check-label" for="flexCheckChecked">
-                          Envio Postal
+                          Envío Postal
                         </label>
                       </div>
                                            
@@ -132,7 +132,7 @@
                         </a>
                       </h6>
                       <h6 class="mb-0">
-                        <a href="./Pago.html" class="text-body">Continuar</a>
+                        <a href="#" onclick="continuarCompra();" class="text-body">Continuar</a>
                       </h6>
                     </div>
                     
@@ -173,10 +173,10 @@
         <a class="page-link " href="./ProcesoCompra.html" ><i class="bi bi-chevron-double-left"></i></a>
       </li>
       <li class="page-item active"><a class="page-link" href="./ProcesoCompra.html">1</a></li>
-      <li class="page-item"><a class="page-link" href="./Pago.html">2</a></li>
+      <li class="page-item"><a class="page-link" onclick="continuarCompra();" href="#">2</a></li>
       <li class="page-item"><a class="page-link" href="#">3</a></li>
       <li class="page-item">
-        <a class="page-link" href="./Pago.html"><i class="bi bi-chevron-double-right"></i></a>
+        <a class="page-link" onclick="continuarCompra();" href=""><i class="bi bi-chevron-double-right"></i></a>
       </li>
     </ul>
   </nav>
@@ -207,12 +207,29 @@
   <script src="https://code.jquery.com/jquery-2.2.4.js" crossorigin="anonymous"></script>
   <!-- https://notifyjs.jpillora.com/-->
    <script src="./Js/notify.min.js"></script> 
-<script src="./Js/ProcesoCompra.js"></script>
-<script>
-  $(document).ready(function(){
-    showDetailShop()
-  })
-</script>
+  <script src="./Js/ProcesoCompra.js"></script>
+  <script>
+    $(document).ready(function(){
+      showDetailShop()
+    })
+  </script>
+  <script>
+    function continuarCompra() {
+      const compra = localStorage.getItem('compra');
+      if (compra) {
+        const cartArray = JSON.parse(compra);
+        if (Array.isArray(cartArray) && cartArray.length > 0) {
+          window.location.href = './Pago.html'
+        } else {
+          // Si el arreglo del carrito está vacío
+          alert('El carrito está vacío.');
+        }
+      } else {
+        // Si el localStorage está vacío o no existe
+        alert("El carrito está vacío");
+      }
+    }
+  </script>
 </body>
 
 </html>
