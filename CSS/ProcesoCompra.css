@@ -1,17 +1,52 @@
-.contenedor{
-    justify-items: center;
-    justify-content: center;
-    
-}
-.contenedor-info{
-    justify-items: center;
-    justify-content: center;
 
-}
 .info{
     margin-left: 20%;
     margin-right: 20%;
+    justify-content: center;  
 }
 .paginacion{
     margin: 2%;
+}
+.compra{
+    text-shadow: 5px 5px 10px #53fabd;
+    text-align: center;
+    margin: 1%;
+
+}
+.principal{
+ 
+    .titulo{
+        color: #000;
+
+    }
+}
+.conte{
+    background: radial-gradient( circle,#000000, #b4b4b4);
+     
+    margin: 0%;
+}
+.conte2{
+    background: radial-gradient( circle,#000000, #b4b4b4);
+     color: #fff;
+    margin: 0%;
+}
+.modal-footer {
+    background-color: #000;
+    color: #fff;
+button{
+    background-color: #b4b4b4;
+    color: #000;
+}    
+}
+
+.modal-header{
+    background-color: #000;
+    color: #fff;
+    .btn-close i{
+        color: #fff;
+    }
+}
+.modal-body{
+    background-color: #000;
+    color: #fff;
 }
