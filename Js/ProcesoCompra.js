@@ -171,11 +171,11 @@ function showDetailShop() {
 			}
 
 			 });
-			 console.log(JSON.parse(localStorage.getItem('MedioDePago')))
+		
 	}
 	$('#total-costo').text("¢" + costoTotalEnvio.toFixed(2))
 	$('#detalle').html(cartRowHTML);
 	$('#total-items').text(itemCount);
 	$('#total-compra').text("¢" + total.toFixed(2));
-
+        //console.log(JSON.parse(localStorage.getItem('MedioDePago')))
 }
