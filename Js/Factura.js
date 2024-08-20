@@ -71,4 +71,23 @@ function limpiarCarrito() {
     localStorage.removeItem("compra");
     localStorage.removeItem("MedioDePago");
     localStorage.removeItem("checkboxState");
-  }
+}
+
+// Obtener la fecha del dispositivo
+    // Crear un nuevo objeto Date
+    var fecha = new Date();
+
+    // Formatear la fecha (opcional)
+    var dia = fecha.getDate();
+    var mes = fecha.getMonth() + 1; // Los meses empiezan en 0, así que sumamos 1
+    var año = fecha.getFullYear();
+
+    // Puedes añadir un cero antes del día o el mes si es necesario
+    if (dia < 10) dia = '0' + dia;
+    if (mes < 10) mes = '0' + mes;
+
+    // Crear la cadena de fecha en formato DD/MM/YYYY
+    var fechaFormateada = dia + '/' + mes + '/' + año;
+
+    // Mostrar la fecha en el elemento con id "fecha"
+    document.getElementById('fecha').textContent = fechaFormateada;
