@@ -178,50 +178,6 @@
    <script src="./Js/notify.min.js"></script> 
 <script src="./Js/ProcesoCompra.js"></script>
 <script src="./Js/Pago.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    // Recuperar el estado del checkbox desde localStorage
-    var checkboxState = localStorage.getItem("checkboxState");
-    
-    // Calcular el costo total del envío y el total inicial
-    var total = 0;
-    var costoTotalEnvio = 0;
-    var cart = JSON.parse(localStorage.getItem('compra'));
-
-    if (cart) {
-        cart.forEach(function(item) {
-            var precio = parseFloat(item.precio) || 0;
-            var cantidad = parseInt(item.cantidad) || 0;
-            total += precio * cantidad;
-            costoTotalEnvio += parseFloat(item.costo) || 0; // Sumar el costo de cada artículo al costo total of envío
-        });
-    }
-
-    // Verificar si el checkbox está marcado
-    if (checkboxState === 'true') {
-        // Sumar el costo de envío al total
-        total += costoTotalEnvio;
-
-        // Mostrar el costo de envío y el total
-        $('#total-costo').text("¢" + costoTotalEnvio.toFixed(2));
-    } else {
-        // Si el checkbox no está marcado, el costo de envío es 0
-        $('#total-costo').text("¢0.00");
-    }
-
-    // Mostrar el total
-    $('#mostrar-total').text("¢" + total.toFixed(2));
-});
-
-$(document).ready(function() {
-    // Guardar el estado del checkbox en localStorage cuando cambia
-    $('flexCheckChecked').on('change', function() {
-        localStorage.setItem("checkboxState", this.checked);
-    });
-});
-</script>
-
-
 </body>
 
 </html>

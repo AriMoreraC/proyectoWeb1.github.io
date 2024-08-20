@@ -45,26 +45,26 @@
 
 <div class="card container text-center" style="max-width: 70%; margin-bottom: 5%; border: 1px solid black;">
   <div class="card-header">
-    ESTUDIO MAGIAS
+    <h2>ESTUDIO MAGIAS</h2>
   </div>
   <div class="card-body">
     <div class="table-responsive" style="min-width: 100%;">
       <table class="table table-striped">
         <thead>
           <tr>
-              <th>Nombre</th>
-              <th>Cantidad</th>
-              <th>Precio</th>
-              <th>Subtotal</th>
+              <th><h4><b>Nombre</b></h4></th>
+              <th><h4><b>Cantidad</b></h4></th>
+              <th><h4><b>Precio</b></h4></th>
+              <th><h4><b>Subtotal</b></h4></th>
           </tr>
-      </thead>
-      <tbody id="detalle">
-        <!-- Los datos de la tabla se añaden aquí -->
-      </tbody>
-      
+        </thead>
+        <tbody id="detalle" style="font-size: 1.3rem;">
+          <!-- Los datos de la tabla se añaden aquí -->
+        </tbody>
       </table>
     </div>
     <h3>Tipo de envío: <span id="TipoEnvio"></span></h3>
+    <h3>Subtotal: <span id="sumaSubtotal"></span></h3>
     <h3>Costo de envío: <span id="costoEnvio"></span></h3>
     <h3>Total: <span id="mostrar-total"></span></h3>
   </div>
@@ -112,87 +112,7 @@
   <!-- https://notifyjs.jpillora.com/-->
    <script src="./Js/notify.min.js"></script> 
 <script src="./Js/ProcesoCompra.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-      // Recuperar el estado del checkbox desde localStorage
-      var checkboxState = localStorage.getItem("checkboxState");
-      
-      // Calcular el costo total del envío y el total inicial
-      var total = 0;
-      var costoTotalEnvio = 0;
-      var cart = JSON.parse(localStorage.getItem('compra'));
-  
-      // Obtener el contenedor de la tabla
-      var detalle = document.getElementById('detalle');
-      detalle.innerHTML = ''; // Limpiar el contenido actual de la tabla
-  
-      if (cart) {
-          cart.forEach(function(item) {
-              var nombre = item.nombre;
-              var precio = parseFloat(item.precio) || 0;
-              var cantidad = parseInt(item.cantidad) || 0;
-              var subtotal = precio * cantidad;
-              
-              total += subtotal;
-              costoTotalEnvio += parseFloat(item.costo) || 0; // Sumar el costo de cada artículo al costo total de envío
-  
-              // Crear una nueva fila
-              var row = document.createElement('tr');
-  
-              // Crear celdas para cada valor
-              var cellNombre = document.createElement('td');
-              cellNombre.textContent = nombre;
-              row.appendChild(cellNombre);
-  
-              var cellCantidad = document.createElement('td');
-              cellCantidad.textContent = cantidad;
-              row.appendChild(cellCantidad);
-  
-              var cellPrecio = document.createElement('td');
-              cellPrecio.textContent = "¢" + precio.toFixed(2);
-              row.appendChild(cellPrecio);
-  
-              var cellSubtotal = document.createElement('td');
-              cellSubtotal.textContent = "¢" + subtotal.toFixed(2);
-              row.appendChild(cellSubtotal);
-  
-              // Agregar la fila a la tabla
-              detalle.appendChild(row);
-          });
-      }
-  var  cart2=JSON.parse(localStorage.getItem('MedioDePago'))
-      var tipo= cart2.tipoEnvio;
-      // Verificar si el checkbox está marcado
-      if (checkboxState === 'true') {
-          // Sumar el costo de envío al total
-          total += costoTotalEnvio;
-  
-          // Mostrar el costo de envío
-          $('#costoEnvio').text("¢" + costoTotalEnvio.toFixed(2));
-      } else {
-          $('#costoEnvio').text("¢0.00");
-      }
-          $('#TipoEnvio').text("¢" + tipo);
-      // Mostrar el total
-      $('#mostrar-total').text("¢" + total.toFixed(2));
-  });
-  
-  
-  $(document).ready(function() {
-      // Guardar el estado del checkbox en localStorage cuando cambia
-      $('#flexCheckChecked').on('change', function() {
-          localStorage.setItem("checkboxState", this.checked);
-      });
-  });
-  </script>
-  
-<script>
-  function limpiarCarrito() {
-    localStorage.removeItem("compra");
-    localStorage.removeItem("MedioDePago");
-    localStorage.removeItem("checkboxState");
-  }
-</script>
+<script src="./Js/Factura.js"></script>
 </body>
 
 </html>

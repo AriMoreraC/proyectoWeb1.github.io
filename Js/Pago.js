@@ -57,3 +57,31 @@ async function codigoBin(event) {
         console.log("Error: ", error);
     }
 }
+
+// Mostrar el total en la parte de Pago
+document.addEventListener("DOMContentLoaded", function() {
+    // Recuperar el estado del checkbox desde localStorage
+    var checkboxState = localStorage.getItem("checkboxState");
+    var total = 0;
+    var costoTotalEnvio = 0;
+    var cart = JSON.parse(localStorage.getItem('compra'));
+    if (cart) {
+        cart.forEach(function(item) {
+            var precio = parseFloat(item.precio);
+            var cantidad = parseInt(item.cantidad);
+            total += precio * cantidad;
+            costoTotalEnvio += parseFloat(item.costo);
+        });
+    }
+    if (checkboxState === 'true') {
+        total += costoTotalEnvio;
+    } 
+    $('#mostrar-total').text("¢" + total.toFixed(2));
+});
+
+$(document).ready(function() {
+    // Guardar el estado del checkbox en localStorage cuando cambia
+    $('flexCheckChecked').on('change', function() {
+        localStorage.setItem("checkboxState", this.checked);
+    });
+});
