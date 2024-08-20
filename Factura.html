@@ -18,22 +18,22 @@
     <h3 class="tituloNav">ESTUDIO MAGIAS</h3> 
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="./index.html">Inicio </a>
+          <a class="nav-link" href="./index.html" onclick="limpiarCarrito();">Inicio </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./ProductosServicios.html">Productos y Servicios</a>
+          <a class="nav-link" href="./ProductosServicios.html" onclick="limpiarCarrito();">Productos y Servicios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="./ProcesoCompra.html">Proceso de Compra</a>
+          <a class="nav-link active" href="./ProcesoCompra.html" onclick="limpiarCarrito();">Proceso de Compra</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./Contacto.html">Contacto</a>
+          <a class="nav-link" href="./Contacto.html" onclick="limpiarCarrito();">Contacto</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./PreguntasFrecuentes.html">Preguntas Frecuentes</a>
+          <a class="nav-link" href="./PreguntasFrecuentes.html" onclick="limpiarCarrito();">Preguntas Frecuentes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./AcercaDe.html">Acerca De</a>
+          <a class="nav-link" href="./AcercaDe.html" onclick="limpiarCarrito();">Acerca De</a>
         </li>
       </ul>
     </div>
@@ -42,15 +42,31 @@
   <main class="container-fluid p-3">
 <h1>FACTURA</h1>
 
-<div class="card container text-center" style="max-width: 40%; margin-bottom: 5%; border: 1px solid black;">
+<div class="card container text-center" style="max-width: 70%; margin-bottom: 5%; border: 1px solid black;">
   <div class="card-header">
     ESTUDIO MAGIAS
   </div>
   <div class="card-body">
     <!-- <h5 class="card-title">Special title treatment</h5> -->
-    <p>Tipo de tarjeta: <span id="medioPago"></span></p>
-    <p>Total: <span id="mostrar-total"></span></p>
-    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    <div class="table-responsive" style="min-width: 100%;">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+              <th>Nombre</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Subtotal</th>
+          </tr>
+      </thead>
+      <tbody id="detalle">
+        <!-- Los datos de la tabla se añaden aquí -->
+      </tbody>
+      
+      </table>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+    <h3>Costo de envío: <span id="costoEnvio"></span></h3>
+    <h3>Total: <span id="mostrar-total"></span></h3>
   </div>
 </div>
 
@@ -97,21 +113,83 @@
    <script src="./Js/notify.min.js"></script> 
 <script src="./Js/ProcesoCompra.js"></script>
 <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      // Recuperar el estado del checkbox desde localStorage
+      var checkboxState = localStorage.getItem("checkboxState");
+      
+      // Calcular el costo total del envío y el total inicial
+      var total = 0;
+      var costoTotalEnvio = 0;
+      var cart = JSON.parse(localStorage.getItem('compra'));
+  
+      // Obtener el contenedor de la tabla
+      var detalle = document.getElementById('detalle');
+      detalle.innerHTML = ''; // Limpiar el contenido actual de la tabla
+  
+      if (cart) {
+          cart.forEach(function(item) {
+              var nombre = item.nombre;
+              var precio = parseFloat(item.precio) || 0;
+              var cantidad = parseInt(item.cantidad) || 0;
+              var subtotal = precio * cantidad;
+              
+              total += subtotal;
+              costoTotalEnvio += parseFloat(item.costo) || 0; // Sumar el costo de cada artículo al costo total de envío
+  
+              // Crear una nueva fila
+              var row = document.createElement('tr');
+  
+              // Crear celdas para cada valor
+              var cellNombre = document.createElement('td');
+              cellNombre.textContent = nombre;
+              row.appendChild(cellNombre);
+  
+              var cellCantidad = document.createElement('td');
+              cellCantidad.textContent = cantidad;
+              row.appendChild(cellCantidad);
+  
+              var cellPrecio = document.createElement('td');
+              cellPrecio.textContent = "¢" + precio.toFixed(2);
+              row.appendChild(cellPrecio);
+  
+              var cellSubtotal = document.createElement('td');
+              cellSubtotal.textContent = "¢" + subtotal.toFixed(2);
+              row.appendChild(cellSubtotal);
+  
+              // Agregar la fila a la tabla
+              detalle.appendChild(row);
+          });
+      }
+  
+      // Verificar si el checkbox está marcado
+      if (checkboxState === 'true') {
+          // Sumar el costo de envío al total
+          total += costoTotalEnvio;
+  
+          // Mostrar el costo de envío
+          $('#costoEnvio').text("¢" + costoTotalEnvio.toFixed(2));
+      } else {
+          $('#costoEnvio').text("¢0.00");
+      }
+  
+      // Mostrar el total
+      $('#mostrar-total').text("¢" + total.toFixed(2));
+  });
+  
+  
   $(document).ready(function() {
-            var total = 0;
-            var cart = JSON.parse(localStorage.getItem('compra'));
-            if (cart) {
-                cart.forEach(function(item) {
-                    var precio = parseFloat(item.precio) || 0;
-                    var cantidad = parseInt(item.cantidad) || 0;
-                    total += precio * cantidad;
-                });
-            }
-            // Mostrar el total
-            $('#mostrar-total').text("¢" + total.toFixed(2));
-        });
-
-</script>
+      // Guardar el estado del checkbox en localStorage cuando cambia
+      $('#flexCheckChecked').on('change', function() {
+          localStorage.setItem("checkboxState", this.checked);
+      });
+  });
+  </script>
+  
+<script>
+  function limpiarCarrito() {
+    localStorage.removeItem("compra");
+    localStorage.removeItem("checkboxState");
+  }
 </script>
 </body>
 

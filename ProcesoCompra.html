@@ -229,6 +229,25 @@
       }
     }
   </script>
+  <script>
+    $(document).ready(function() {
+    // Recuperar el estado del checkbox desde localStorage
+    var checkboxState = localStorage.getItem("checkboxState");
+    
+    // Verificar si el estado del checkbox es 'true' o 'false'
+    if (checkboxState === 'true') {
+        $('#flexCheckChecked').prop('checked', true);
+    } else {
+        $('#flexCheckChecked').prop('checked', false);
+    }
+
+    // Guardar el estado del checkbox en localStorage cuando cambie
+    $('#flexCheckChecked').on('change', function() {
+        localStorage.setItem("checkboxState", this.checked);
+    });
+});
+
+</script>
 </body>
 
 </html>
