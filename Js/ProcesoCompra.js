@@ -95,6 +95,7 @@ function showDetailShop() {
 	var cartRowHTML = "";
 	var itemCount = 0;
 	var total = 0;
+	var TipoEnvio="";
 	var costoTotalEnvio=0;
 	var precio = 0;
 	var quantity = 0;
@@ -137,45 +138,44 @@ function showDetailShop() {
 		});		
 		document.getElementById('flexCheckChecked').addEventListener('change', function() { 
 			if (this.checked) {
-				costoTotalEnvio=costoTotalEnvio;
+	costoTotalEnvio=costoTotalEnvio;
+				TipoEnvio="Envío Postal"
 		
 				$('#total-costo').text("¢" + costoTotalEnvio.toFixed(2))
+
 				
 			} else {
-				costoTotalEnvio=0;
-					$('#total-costo').text("¢" + costoTotalEnvio.toFixed(2))
+					costoTotalEnvio=0;
+				TipoEnvio="Recogida en Tienda"
+
+					$('#total-costo').text("¢" + costoTotalEnvio.toFixed(2))		
+
 			}
 				total+=costoTotalEnvio;
 			$('#total-compra').text("¢" + total.toFixed(2));
 
-
-			
 			try{
 
 			
 			let cartItem = {
 				medio: "", 
+				tipoEnvio:TipoEnvio,
 				costo:costoTotalEnvio,
 				totalPagar:total
 			}
-			if (localStorage.getItem('MedioDePago')) {
-				localStorage.setItem('MedioDePago', JSON.stringify(cartItem))
 
-			   
-			}else{
-			  localStorage.setItem('MedioDePago',JSON.stringify(cartItem))  
-			} 
-
+           localStorage.setItem('MedioDePago',JSON.stringify(cartItem))  
+  
 			} catch (error) {
 				console.log("Error: ", error)
 			}
 
 			 });
-
+			 console.log(JSON.parse(localStorage.getItem('MedioDePago')))
 	}
 	$('#total-costo').text("¢" + costoTotalEnvio.toFixed(2))
 	$('#detalle').html(cartRowHTML);
 	$('#total-items').text(itemCount);
 	$('#total-compra').text("¢" + total.toFixed(2));
-	console.log(JSON.parse(localStorage.getItem('MedioDePago')))
+
 }

@@ -65,6 +65,7 @@
       </table>
       <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
     </div>
+    <h3>Tipo de envío: <span id="TipoEnvio"></span></h3>
     <h3>Costo de envío: <span id="costoEnvio"></span></h3>
     <h3>Total: <span id="mostrar-total"></span></h3>
   </div>
@@ -160,7 +161,8 @@
               detalle.appendChild(row);
           });
       }
-  
+  var  cart2=JSON.parse(localStorage.getItem('MedioDePago'))
+      var tipo= cart2.tipoEnvio;
       // Verificar si el checkbox está marcado
       if (checkboxState === 'true') {
           // Sumar el costo de envío al total
@@ -171,7 +173,7 @@
       } else {
           $('#costoEnvio').text("¢0.00");
       }
-  
+          $('#TipoEnvio').text("¢" + tipo);
       // Mostrar el total
       $('#mostrar-total').text("¢" + total.toFixed(2));
   });
@@ -188,6 +190,7 @@
 <script>
   function limpiarCarrito() {
     localStorage.removeItem("compra");
+    localStorage.removeItem("MedioDePago");
     localStorage.removeItem("checkboxState");
   }
 </script>
