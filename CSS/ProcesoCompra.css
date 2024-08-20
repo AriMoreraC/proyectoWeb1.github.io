@@ -52,7 +52,7 @@ button{
 }
 
 /* Ajustar factura en teléfonos */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .card.container {
       max-width: 90%;
       margin-bottom: 10%;
@@ -84,10 +84,6 @@ button{
       min-width: 100%;
       overflow-x: auto;
     }
-
-    .table {
-        margin-bottom: 10%;
-    }
   
     .table th, .table td {
       font-size: 1rem;
@@ -108,5 +104,4 @@ button{
     .card-body p {
       margin-top: 10%;
     }
-  }
-  
+  } */
