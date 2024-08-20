@@ -3,11 +3,15 @@
     color: black;
 }
 #filter {
-    background-color: #b4b4b4;
+    background-color: #fff;
 }
 
 .card{
     img{
         max-height: 80%;
     }
+}
+select option:checked {
+    background-color: #b4b4b4; 
+    color: white; 
 }
