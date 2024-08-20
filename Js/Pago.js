@@ -28,12 +28,14 @@ async function codigoBin(event) {
                 const cart = JSON.parse(localStorage.getItem('MedioDePago'));
                 cartItem = {
                     medio: data.Scheme,
+                    tipoEnvio:cart.tipoEnvio,
                     costo: cart.costo,
                     totalPagar: cart.totalPagar
                 };
             } else {
                 cartItem = {
                     medio: data.Scheme,
+                    tipoEnvio:"",
                     costo: 0, // Define a default value
                     totalPagar: 0 // Define a default value
                 };
