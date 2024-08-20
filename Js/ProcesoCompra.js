@@ -96,6 +96,7 @@ function showDetailShop() {
 	var itemCount = 0;
 	var total = 0;
 	var costoTotalEnvio=0;
+	var TipoEnvio="";
 	var precio = 0;
 	var quantity = 0;
 	var subTotal = 0;
@@ -138,12 +139,13 @@ function showDetailShop() {
 		document.getElementById('flexCheckChecked').addEventListener('change', function() { 
 			if (this.checked) {
 				costoTotalEnvio=costoTotalEnvio;
-		
+				TipoEnvio="Envío Postal"
 				$('#total-costo').text("¢" + costoTotalEnvio.toFixed(2))
 				
 			} else {
 				costoTotalEnvio=0;
-					$('#total-costo').text("¢" + costoTotalEnvio.toFixed(2))
+				TipoEnvio="Recogida en Tienda"
+				$('#total-costo').text("¢" + costoTotalEnvio.toFixed(2))
 			}
 				total+=costoTotalEnvio;
 			$('#total-compra').text("¢" + total.toFixed(2));
@@ -155,6 +157,7 @@ function showDetailShop() {
 			
 			let cartItem = {
 				medio: "", 
+				tipoEnvio:TipoEnvio,
 				costo:costoTotalEnvio,
 				totalPagar:total
 			}
