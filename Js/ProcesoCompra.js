@@ -136,7 +136,7 @@ function showDetailShop() {
 
 			total += subTotal;
 		});		
-		document.getElementById('flexCheckChecked').addEventListener('change', function() { 
+		document.getElementById('checkEnvio').addEventListener('change', function() { 
 			if (this.checked) {
 	costoTotalEnvio=costoTotalEnvio;
 				TipoEnvio="Envío Postal"

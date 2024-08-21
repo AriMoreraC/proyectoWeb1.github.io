@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 $(document).ready(function() {
     // Guardar el estado del checkbox en localStorage cuando cambia
-    $('flexCheckChecked').on('change', function() {
+    $('checkEnvio').on('change', function() {
         localStorage.setItem("checkboxState", this.checked);
     });
 });

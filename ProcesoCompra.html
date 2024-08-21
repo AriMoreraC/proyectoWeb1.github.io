@@ -103,8 +103,8 @@
                       <div class="col-md-4 col-lg-2 col-xl-7 offset-lg-1 ">
                         <h5 class="mb-0">Costo de Envío:</h5>
                          <div class=" form-check">
-                        <input class="form-check-input" type="checkbox" value="" onclick="showDetailShop()" id="flexCheckChecked" >
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <input class="form-check-input" type="checkbox" value="" onclick="showDetailShop()" id="checkEnvio" >
+                        <label class="form-check-label" for="checkEnvio">
                           Envío Postal
                         </label>
                       </div>
@@ -236,13 +236,13 @@
     
     // Verificar si el estado del checkbox es 'true' o 'false'
     if (checkboxState === 'true') {
-        $('#flexCheckChecked').prop('checked', true);
+        $('#checkEnvio').prop('checked', true);
     } else {
-        $('#flexCheckChecked').prop('checked', false);
+        $('#checkEnvio').prop('checked', false);
     }
 
     // Guardar el estado del checkbox en localStorage cuando cambie
-    $('#flexCheckChecked').on('change', function() {
+    $('#checkEnvio').on('change', function() {
         localStorage.setItem("checkboxState", this.checked);
     });
 });
