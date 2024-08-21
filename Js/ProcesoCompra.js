@@ -8,7 +8,6 @@ function addToCart(element) {
 	let costo=$(ProdPadre).find('.item-costo').text()
 	costo=costo.substring(1,costo.length)
 //Elemento del carrito
-		//{3,'Nombre'} {id:3,name:'Nombre'} 
 		let cartItem={
 			id,
 			nombre,
@@ -39,7 +38,7 @@ function addToCart(element) {
 	localStorage.setItem('compra',JSON.stringify(cartArray))
 	//Notificar Guardar
 	console.log(JSON.parse(localStorage.getItem('compra')))
-	$.notify("Producto o Servicio agregado: "+nombre,"sucess")
+	$.notify("Producto o Servicio agregado: "+nombre,"success")
 }
 function removeCartItem(id) {
 	var cartArray = JSON.parse(localStorage.getItem('compra'))
