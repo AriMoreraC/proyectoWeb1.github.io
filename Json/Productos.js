@@ -16,7 +16,7 @@ const productos = [
             "Imagen2": "./Imagenes/Retablo borde2.jpg",
             "Imagen3": "./Imagenes/Retablo borde3.webp"
         },
-        "reseñas": [
+        "resennas": [
             {
                 "rating": 4,
                 "comment": "Muy buena calidad de impresión, el proceso fue rápido."
@@ -24,6 +24,10 @@ const productos = [
             {
                 "rating": 3,
                 "comment": "Las fotos salieron bien, pero el tiempo de espera en la tienda fue un poco largo."
+            },
+            {
+                "rating": 1,
+                "comment": "No me gustó como quedó el retablo."
             }
         ]
     },
