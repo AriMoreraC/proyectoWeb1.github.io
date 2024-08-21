@@ -131,7 +131,7 @@ const productos = [
         "id": 2,
         "Nombre": " Retablo fotográfico, de borde tipo bastidor ",
         "Descripcion": "Retablo de 16x20 pulgadas, de borde tipo bastidor (borde a los lados de 1.5 cm color negro).",
-        "Imagen": "./Imagenes/Retablo bastidor3.jpeg",
+        "Imagen": "./Imagenes/RetabloBastidor.webp",
         "Precio": 38700,
         "TiempoEntrega": "De una a dos semanas.",
         "CostoEnvio": 350,
@@ -140,7 +140,7 @@ const productos = [
         "Garantia": "30 años contra defectos de fábrica, no cubre golpes o rayas a partir de una incorrecta manipulación.",
         "Categorias": ["Retablos"],
         "GaleriaImagenes": {
-            "Imagen1": "./Imagenes/Retablo bastidor3.jpeg",
+            "Imagen1": "./Imagenes/RetabloBastidor.webp",
             "Imagen2": "./Imagenes/Retablo bastidor2.png",
             "Imagen3": "./Imagenes/retabloBestidor1.jpg"
         },
