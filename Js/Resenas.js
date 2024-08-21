@@ -37,10 +37,7 @@ botonGuardar.addEventListener('click', function() {
     localStorage.setItem(`userRatings_${productoId}`, JSON.stringify(resennasLocalStorage));
 
     // Notificar
-    $.notify("Reseña guardada exitosamente.", {
-        className: "success",
-        globalPosition: "top right"
-    });
+    $.notify("Reseña guardada exitosamente.", "success");
 
     // Actualizar la visualización de las reseñas
     mostrarResennasGuardadas();
@@ -48,6 +45,10 @@ botonGuardar.addEventListener('click', function() {
     // Limpiar el campo de comentario y desactivar el botón de guardar
     document.getElementById('userComment').value = '';
     botonGuardar.disabled = true;
+
+    setTimeout(() => {
+        location.reload();
+    }, 1150); 
 });
 
 // Función para mostrar las estrellas seleccionadas
