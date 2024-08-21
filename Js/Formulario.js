@@ -19,27 +19,29 @@ document.getElementById('fechaNacimiento').addEventListener('change', function()
     var fechaNacimiento = new Date(fecha);
     var fechaMaxima = new Date('1920-01-01');
     var fechaMinima = new Date('2012-01-01');
-    if (fechaNacimiento < fechaMinima) {
-        document.getElementById('error-edad').style.display = 'none';
-    } else {
-        document.getElementById('error-edad').style.display = 'block';
-    }
-    if (fechaNacimiento >= fechaMaxima) {
+
+    if (fechaNacimiento >= fechaMaxima && fechaNacimiento <= fechaMinima) {
         document.getElementById('error-edad').style.display = 'none';
     } else {
         document.getElementById('error-edad').style.display = 'block';
     }
 });
+
 document.querySelector('form').addEventListener('submit', function(event) {
     var fecha = document.getElementById('fechaNacimiento').value;
     var fechaNacimiento = new Date(fecha);
     var fechaMaxima = new Date('1920-01-01');
     var fechaMinima = new Date('2012-01-01');
-    if (fechaNacimiento >= fechaMinima || fechaNacimiento < fechaMaxima) {
-        event.preventDefault(); // Evita el envío del formulario
+
+    if (fechaNacimiento < fechaMaxima || fechaNacimiento > fechaMinima) {
+        event.preventDefault(); // Prevent form submission
         document.getElementById('error-edad').style.display = 'block';
+    } else {
+        document.getElementById('error-edad').style.display = 'none';
     }
 });
+
+
 
 // Mostrar el notify del envío de Formulario
 document.addEventListener("DOMContentLoaded", function() {
