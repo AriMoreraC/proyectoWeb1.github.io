@@ -57,6 +57,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     $('#sumaSubtotal').text("¢" + sumaSubtotal.toFixed(2))
     $('#mostrar-total').text("¢" + total.toFixed(2));
+    console.log(JSON.parse(localStorage.getItem('compra')));
+    console.log(JSON.parse(localStorage.getItem('MedioDePago')));
 });
 
 // Guardar el estado del checkbox en localStorage cuando cambia
