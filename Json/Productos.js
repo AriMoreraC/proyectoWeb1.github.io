@@ -27,7 +27,7 @@ const productos = [
             },
             {
                 "rating": 1,
-                "comment": "No me gustó como quedó el retablo."
+                "comment": "No me gustó como quedó el retablo. La calidad es inferior a la que aparentaba."
             }
         ]
     },
@@ -55,7 +55,7 @@ const productos = [
             },
             {
                 "rating": 4,
-                "comment": "Muy buenas impresiones por un precio accesible. La única mejora que sugeriría es la posibilidad de realizar pedidos en línea para evitar tener que ir al establecimiento."
+                "comment": "Muy buenas impresiones por un precio accesible. La única sugerencia sería la posibilidad de realizar pedidos en línea para evitar tener que ir al establecimiento."
             },
             {
                 "rating": 4,
@@ -91,7 +91,7 @@ const productos = [
             },
             {
                 "rating": 2,
-                "comment": "La impresión no cumplió mis expectativas en cuanto a color. Espero que mejoren en futuras ocasiones."
+                "comment": "La impresión no cumplió mis expectativas en cuanto a color. Espero que mejoren en este aspecto."
             }
         ]
     },  
@@ -147,11 +147,11 @@ const productos = [
         "resennas": [
             {
                 "rating": 5,
-                "comment": "El retablo de borde tipo bastidor es de excelente calidad. Mi foto se ve increíble y el borde negro le da un toque elegante."
+                "comment": "El retablo de borde tipo bastidor es de excelente calidad. Mi foto se ve increíble y el borde le da un toque elegante."
             },
             {
-                "rating": 4,
-                "comment": "Muy buena calidad de impresión y el acabado es profesional. Solo que el tiempo de entrega fue un poco largo."
+                "rating": 3,
+                "comment": "Muy buena calidad de impresión y el acabado es profesional. Solo que el tiempo de entrega fue más de lo esperado."
             },
             {
                 "rating": 2,
@@ -182,7 +182,7 @@ const productos = [
                 "comment": "La sesión de 8 fotos fue fantástica. El fotógrafo hizo un trabajo excelente y las fotos se entregaron a tiempo."
             },
             {
-                "rating": 4,
+                "rating": 3,
                 "comment": "Las fotos son geniales y el precio es razonable. Sin embargo, el proceso para recibir las fotos digitales podría ser más sencillo."
             },
             {
@@ -278,11 +278,11 @@ const productos = [
                 "comment": "Las fotografías comerciales entregadas superaron mis expectativas. El servicio fue profesional y las imágenes de alta calidad."
             },
             {
-                "rating": 4,
+                "rating": 3,
                 "comment": "Buen trabajo en general. El único problema fue la falta de claridad en el proceso de ajuste de precios según las necesidades específicas."
             },
             {
-                "rating": 3,
+                "rating": 2,
                 "comment": "Las fotos están bien, pero el costo final fue más alto de lo esperado. Mejorar la transparencia en los precios sería útil."
             }
         ]
@@ -314,7 +314,7 @@ const productos = [
                 "comment": "Muy buenas fotos a un buen precio. Me gustaría ver más opciones de paisajes disponibles en el futuro."
             },
             {
-                "rating": 3,
+                "rating": 2,
                 "comment": "La calidad de las fotos es buena, pero la entrega fue un poco lenta. La opción de ver las fotos en línea antes de comprar sería útil."
             }
         ]
@@ -371,10 +371,10 @@ const productos = [
         "resennas": [
             {
                 "rating": 5,
-                "comment": "Las fotos de mi mascota quedaron perfectas. El fotógrafo hizo un gran trabajo capturando la personalidad de mi animal."
+                "comment": "Las fotos de mi mascota quedaron perfectas. El fotógrafo hizo un gran trabajo capturando la personalidad de mi perrito."
             },
             {
-                "rating": 4,
+                "rating": 3,
                 "comment": "Buen servicio y fotos de calidad. El tiempo de espera para recibir las imágenes fue un poco largo, pero valió la pena."
             },
             {
