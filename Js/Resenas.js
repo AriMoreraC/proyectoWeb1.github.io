@@ -36,6 +36,12 @@ botonGuardar.addEventListener('click', function() {
     // Guardar la reseña en localStorage
     localStorage.setItem(`userRatings_${productoId}`, JSON.stringify(resennasLocalStorage));
 
+    // Notificar
+    $.notify("Reseña guardada exitosamente.", {
+        className: "success",
+        globalPosition: "top right"
+    });
+
     // Actualizar la visualización de las reseñas
     mostrarResennasGuardadas();
 

@@ -189,10 +189,10 @@
       if (datos) {
         // Ordenar en orden descendente
         datos.sort((a, b) => b.cantidad - a.cantidad);
-        const topLibros = datos.slice(0, 4);
+        const topProductos = datos.slice(0, 4);
         // Extraer los títulos y cantidad
-        const nombre = topLibros.map((prod) => prod.nombre);
-        const cantidad = topLibros.map((prod) => prod.cantidad);
+        const nombre = topProductos.map((prod) => prod.nombre);
+        const cantidad = topProductos.map((prod) => prod.cantidad);
         const ctx = document.getElementById('miGrafico').getContext('2d');
         const miGrafico = new Chart(ctx, {
           type: 'bar',

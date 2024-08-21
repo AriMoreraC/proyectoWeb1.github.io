@@ -77,12 +77,12 @@ function limpiarCarrito() {
     // Crear un nuevo objeto Date
     var fecha = new Date();
 
-    // Formatear la fecha (opcional)
+    // Formatear la fecha
     var dia = fecha.getDate();
-    var mes = fecha.getMonth() + 1; // Los meses empiezan en 0, así que sumamos 1
+    var mes = fecha.getMonth() + 1; // Los meses empiezan en 0, así que se suma 1
     var año = fecha.getFullYear();
 
-    // Puedes añadir un cero antes del día o el mes si es necesario
+    // Añadir un cero antes del día o el mes si es necesario
     if (dia < 10) dia = '0' + dia;
     if (mes < 10) mes = '0' + mes;
 
